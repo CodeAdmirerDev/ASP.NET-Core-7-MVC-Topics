@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\Suri Learning\Publish</_PublishTargetUrl>
+    <History>True|2023-11-25T19:52:13.9669682Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ExampleContextConnection">
+      <Value>workstation id=CodeWithSuri.mssql.somee.com%3bpacket size=4096%3buser id=CodeWithSuri_SQLLogin_1%3bpwd=8si13xkgt9%3bdata source=CodeWithSuri.mssql.somee.com%3bpersist security info=False%3binitial catalog=CodeWithSuri%3b Encrypt=false%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="LearningMVCContextConnection">
+      <Value>workstation id=CodeWithSuri.mssql.somee.com%3bpacket size=4096%3buser id=CodeWithSuri_SQLLogin_1%3bpwd=8si13xkgt9%3bdata source=CodeWithSuri.mssql.somee.com%3bpersist security info=False%3binitial catalog=CodeWithSuri%3b Encrypt=false%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
