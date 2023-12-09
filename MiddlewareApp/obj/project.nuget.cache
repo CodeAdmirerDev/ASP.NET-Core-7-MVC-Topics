@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2btk95wXdkw9J09o6CZBO2iJeXDGePf6OROeeGPO2Mm7Xvhz1LmX2HHPv20BGraCJ7J/Ap0Kyv5ckQ/2VPPTlQ==",
+  "dgSpecHash": "7hN5njmmqqx+0eniMXesDc5tDQu+Zxsgu8pDN8YlWcS1M+DiVGZM4ddrKG80WJgM4T3SxYp0x1JN9ua5wKHh1A==",
   "success": true,
-  "projectFilePath": "E:\\ASPNET7\\MiddlewareApp\\MiddlewareApp.csproj",
+  "projectFilePath": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\MiddlewareApp\\MiddlewareApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suren\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\suren\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
