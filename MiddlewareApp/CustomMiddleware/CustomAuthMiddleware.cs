@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace MiddlewareApp.CustomMiddleware
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
+    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project.  
     public class CustomAuthMiddleware
     {
-
-
         private readonly RequestDelegate _next;
-
         public CustomAuthMiddleware(RequestDelegate next)
         {
             _next = next;
@@ -46,6 +43,7 @@ namespace MiddlewareApp.CustomMiddleware
         {
             // Implement validation logic here
 
+            return null;
         }
     }
 }
