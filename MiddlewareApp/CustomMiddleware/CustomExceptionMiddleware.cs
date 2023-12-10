@@ -9,22 +9,18 @@ namespace MiddlewareApp.CustomMiddleware
     public class CustomExceptionMiddleware
     {
         private readonly RequestDelegate _next;
-
         public CustomExceptionMiddleware(RequestDelegate next)
         {
             _next = next;
         }
-
         public async Task Invoke(HttpContext httpContext)
         {
             try
             {
-
                 int q = 0;
 
                 int i = 1 / q;
                 await _next(httpContext);
-
 
             }
             catch(Exception ex)

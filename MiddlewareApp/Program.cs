@@ -40,7 +40,10 @@ else
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<CustomExceptionMiddleware>();
 app.UseStaticFiles();
+app.UseMiddleware<CustomLoggingMiddleware>();
 
 app.UseRouting();
 
@@ -49,10 +52,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.UseMiddleware<CustomExceptionMiddleware>();
-app.UseMiddleware<CustomMiddleware>();
-app.UseMiddleware<DummyMiddleware>();
-app.UseMiddleware<CustomLoggingMiddleware>();
+
 
 
 
