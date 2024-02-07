@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ASPNET7\\DependencyInjectionCoreApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\models\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\models\\bankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\bankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\models\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\dependencyinjectioncoreapp\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestBankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\TestBankRepository.cs",
+              "RelativeDocumentMoniker": "Models\\TestBankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\TestBankRepository.cs",
+              "RelativeToolTip": "Models\\TestBankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T19:03:14.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankController.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Controllers\\BankController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BankController.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Controllers\\BankController.cs",
+              "RelativeToolTip": "Controllers\\BankController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T18:17:29.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAUwA8AAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T18:00:12.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\BankRepository.cs",
+              "RelativeDocumentMoniker": "Models\\BankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\BankRepository.cs",
+              "RelativeToolTip": "Models\\BankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T17:33:16.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\IBankRepository.cs",
+              "RelativeDocumentMoniker": "Models\\IBankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\IBankRepository.cs",
+              "RelativeToolTip": "Models\\IBankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T17:18:02.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\Bank.cs",
+              "RelativeDocumentMoniker": "Models\\Bank.cs",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\Models\\Bank.cs",
+              "RelativeToolTip": "Models\\Bank.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T17:17:41.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjectionCoreApp",
+              "DocumentMoniker": "E:\\ASPNET7\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
+              "RelativeDocumentMoniker": "DependencyInjectionCoreApp.csproj",
+              "ToolTip": "E:\\ASPNET7\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
+              "RelativeToolTip": "DependencyInjectionCoreApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-07T17:15:36.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
