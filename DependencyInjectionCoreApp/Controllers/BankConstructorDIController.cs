@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DependencyInjectionCoreApp.Controllers
 {
-    public class BankController : Controller
+    public class BankConstructorDIController : Controller
     {
 
         private readonly IBankRepository _bankRepository;
 
-        public BankController(IBankRepository bankRepository)
+        public BankConstructorDIController(IBankRepository bankRepository)
         {
             _bankRepository = bankRepository;
         }
