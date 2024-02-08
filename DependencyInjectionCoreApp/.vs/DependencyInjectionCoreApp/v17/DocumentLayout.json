@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\controllers\\bankmethoddicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\bankmethoddicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\controllers\\bankmethoddicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\bankmethoddicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\models\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,30 +42,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BankMethodDIController.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\BankMethodDIController.cs",
               "RelativeDocumentMoniker": "Controllers\\BankMethodDIController.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\BankMethodDIController.cs",
               "RelativeToolTip": "Controllers\\BankMethodDIController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvxMAAAAiAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-08T17:23:52.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAUwBYAAABMAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T18:00:12.575Z",
               "EditorCaption": ""
@@ -91,7 +91,7 @@
               "RelativeDocumentMoniker": "Models\\BankRepository.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\BankRepository.cs",
               "RelativeToolTip": "Models\\BankRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvyQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T17:33:16.295Z",
               "EditorCaption": ""
