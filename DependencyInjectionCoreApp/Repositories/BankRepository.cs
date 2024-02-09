@@ -1,5 +1,6 @@
-﻿
-namespace DependencyInjectionCoreApp.Models
+﻿using DependencyInjectionCoreApp.Models;
+
+namespace DependencyInjectionCoreApp.Repositories
 {
     public class BankRepository : IBankRepository
     {

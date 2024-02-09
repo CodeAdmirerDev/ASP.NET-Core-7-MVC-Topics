@@ -1,4 +1,5 @@
 ﻿using DependencyInjectionCoreApp.Models;
+using DependencyInjectionCoreApp.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DependencyInjectionCoreApp.Controllers
