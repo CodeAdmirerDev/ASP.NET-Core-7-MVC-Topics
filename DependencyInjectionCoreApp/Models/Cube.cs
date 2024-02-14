@@ -4,8 +4,6 @@ namespace DependencyInjectionCoreApp.Models
 {
     public class Cube : IShape
     {
-
-
         public decimal Slide { get; set; }
         public decimal SurfaceVal { get; set; }
         public decimal Volume { get; set; }
@@ -14,8 +12,6 @@ namespace DependencyInjectionCoreApp.Models
         {
             Slide = input;
         }
-
-
 
         public decimal DisplaySurfaceArea()
         {
@@ -28,7 +24,5 @@ namespace DependencyInjectionCoreApp.Models
             Volume = Slide * Slide * Slide; 
             return Volume;
         }
-
-
     }
 }

@@ -6,6 +6,21 @@ namespace DependencyInjectionCoreApp.Repositories
     {
 
 
+
+        public BankRepository()
+        {
+
+            string filePath = @"E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Logs\\ServiceLifeTimeLog.txt";
+
+            string dataOfMsg = $"Bank repo Object is created :@{DateTime.Now.ToString()}";
+
+            using(StreamWriter writer = new StreamWriter(filePath,true))
+            {
+                writer.WriteLine(dataOfMsg);
+            }
+
+        }
+
         public List<Bank> BankDataSource()
         {
             //List<Bank> listBanks = new List<Bank>();

@@ -16,14 +16,15 @@ namespace DependencyInjectionCoreApp
 
             //Add application services 
 
-            // builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),new TestBankRepository()));  //By defalut it is singleton
+            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),new TestBankRepository()));  //By default it is singleton
             //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),typeof(BankRepository),ServiceLifetime.Singleton)); 
             //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Transient)); 
             //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Scoped));
 
-
             //******Other way to add it *********
-            builder.Services.AddSingleton<IBankRepository,BankRepository>();
+            builder.Services.AddTransient<IBankRepository,BankRepository>();
+            builder.Services.AddTransient<ITestBankRepo, TestBankRepo>();
+
             //builder.Services.AddSingleton(typeof(IBankRepository), typeof(BankRepository));
             //builder.Services.AddScoped<IBankRepository, BankRepository>();
             //builder.Services.AddTransient<IBankRepository, BankRepository>();

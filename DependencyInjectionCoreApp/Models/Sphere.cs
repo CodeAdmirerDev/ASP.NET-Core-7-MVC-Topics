@@ -24,6 +24,5 @@ namespace DependencyInjectionCoreApp.Models
             Volume = 4/3*3.14m* Radius*Radius*Radius;
             return Volume;
         }
-
     }
 }

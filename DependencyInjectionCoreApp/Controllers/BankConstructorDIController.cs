@@ -8,13 +8,16 @@ namespace DependencyInjectionCoreApp.Controllers
     {
         //With DI Implementation
         private readonly IBankRepository _bankRepository;
-        public BankConstructorDIController(IBankRepository bankRepository)
+        private readonly ITestBankRepo _testBankRepository;
+        public BankConstructorDIController(IBankRepository bankRepository, ITestBankRepo testBankRepository)
         {
             _bankRepository = bankRepository;
+            _testBankRepository = testBankRepository;
         }
 
         public JsonResult GetAllBanksInfo()
         {
+            _testBankRepository.GetBanksInfoFromTestBankRepo();
             return Json(_bankRepository.GetAllBanks());
         }
 
