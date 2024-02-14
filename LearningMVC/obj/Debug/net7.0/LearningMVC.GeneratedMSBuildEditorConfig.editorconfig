@@ -9,147 +9,147 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LearningMVC
 build_property.RootNamespace = LearningMVC
-build_property.ProjectDir = E:\ASPNET7\LearningMVC\
+build_property.ProjectDir = E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\LearningMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\ASPNET7\LearningMVC
+build_property.MSBuildProjectDirectory = E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\LearningMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Login.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Logout.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/Register.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/_ViewImports.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Depts/Create.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Depts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Depts/Delete.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Depts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Depts/Details.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Depts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Depts/Edit.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Depts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Depts/Index.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Depts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Emp/Create.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Emp/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Emp/Index.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Emp/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Emp/Index1.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Emp/Index1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wXEluZGV4MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Home/Index.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Home/Privacy.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Roles/Create.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Roles/Delete.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Roles/Details.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Roles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Roles/Edit.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Roles/Index.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Shared/Error.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Shared/_LoginPartial.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/_ViewImports.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/_ViewStart.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ASPNET7/LearningMVC/Views/Shared/_Layout.cshtml]
+[E:/ASPNET7/ASP.NET-Core-7-MVC-Topics/LearningMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xknrn8qnnj

@@ -6,3 +6,13 @@ DependencyInjectionCoreApp/bin/Debug/net7.0/DependencyInjectionCoreApp.dll
 DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/DocumentLayout.json
 DependencyInjectionCoreApp/bin/Debug/net7.0/DependencyInjectionCoreApp.dll
 DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/DocumentLayout.json
+*.pdb
+*.v2
+*.v2
+*.bin
+*.vsidx
+LearningMVC/.vs/LearningMVC/FileContentIndex/3b9668bf-818e-48a2-8701-42fa0fe732b5.vsidx
+LearningMVC/.vs/LearningMVC/v17/.suo
+*.dll
+DependencyInjectionCoreApp/obj/Debug/net7.0/apphost.exe
+*.exe
