@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+
+    string username = ViewData["UserName"].ToString();
+
+    username = "Mr. " + username;
+}
+
+<h1>Index</h1>
+
+@* <h3>Welcome, @ViewData["UserName"]</h3> *@
+
+<h3>Welcome, @username </h3>
+

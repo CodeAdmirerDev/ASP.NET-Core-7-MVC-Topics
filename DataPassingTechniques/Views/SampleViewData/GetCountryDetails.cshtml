@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "GetCountryDetails";
+
+    var countryInfo = ViewData["countryObjInfoFromSample"] as Country;
+
+    var countryInfo1 = ViewData["countryObjInfoFromHome"] as Country;
+}
+
+
+<h1>@ViewData["Heading"]</h1>
+
+<table border="1">
+    <tr>
+        <th>Sno</th>
+        <th>Country Name</th>
+        <th>Country Code</th>
+        <th>Country Capital</th>
+        <th>Country Population</th>
+        <th>Country Description</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>@countryInfo.CountryName </td>
+        <td>@countryInfo.CountryCode</td>
+        <td>@countryInfo.CountryCapital</td>
+        <td>@countryInfo.CountryPopulation</td>
+        <td>@countryInfo.CountryDescription</td>
+</tr> 
+<tr>
+        @if (countryInfo1!=null)
+        {
+        <td>2</td>
+        <td>@countryInfo1.CountryName </td>
+        <td>@countryInfo1.CountryCode</td>
+        <td>@countryInfo1.CountryCapital</td>
+        <td>@countryInfo1.CountryPopulation</td>
+        <td>@countryInfo1.CountryDescription</td>
+        }
+    </tr>
+
+</table>
