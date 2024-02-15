@@ -98,8 +98,7 @@
               "RelativeToolTip": "Logs\\ServiceLifeTimeLog.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-02-14T16:50:32.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T16:50:32.247Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "Repositories\\BankRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T17:33:16.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T17:33:16.295Z"
             },
             {
               "$type": "Document",
@@ -122,7 +120,7 @@
               "RelativeDocumentMoniker": "Controllers\\BankConstructorDIController.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\BankConstructorDIController.cs",
               "RelativeToolTip": "Controllers\\BankConstructorDIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T18:17:29.702Z",
               "EditorCaption": ""
@@ -137,8 +135,7 @@
               "RelativeToolTip": "Repositories\\TestBankRepo.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAA8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-13T17:01:35.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-13T17:01:35.563Z"
             },
             {
               "$type": "Document",
@@ -150,8 +147,7 @@
               "RelativeToolTip": "Controllers\\BankMethodDIController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-08T17:23:52.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-08T17:23:52.11Z"
             },
             {
               "$type": "Document",
@@ -163,8 +159,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAUwBkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T18:00:12.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T18:00:12.575Z"
             },
             {
               "$type": "Document",
@@ -176,8 +171,7 @@
               "RelativeToolTip": "Models\\Interfaces\\IShape.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:10:34.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:10:34.814Z"
             },
             {
               "$type": "Document",
@@ -189,8 +183,7 @@
               "RelativeToolTip": "Repositories\\ITestBankRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T16:23:43.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T16:23:43.516Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-14T16:38:27.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T16:38:27.571Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "Repositories\\IBankRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T17:18:02.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T17:18:02.486Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "FactoryDP\\ShapeFactory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:38:28.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:38:28.687Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "Enums\\ShapeEnum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:36:43.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:36:43.815Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "FactoryDP\\IShapeFactory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:33:44.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:33:44.605Z"
             },
             {
               "$type": "Document",
@@ -267,8 +255,7 @@
               "RelativeToolTip": "Models\\Sphere.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:14:08.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:14:08.637Z"
             },
             {
               "$type": "Document",
@@ -280,8 +267,7 @@
               "RelativeToolTip": "Models\\Cube.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:13:47.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T18:13:47.1Z"
             },
             {
               "$type": "Document",
@@ -293,8 +279,7 @@
               "RelativeToolTip": "Controllers\\ShapeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T19:11:36.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-09T19:11:36.426Z"
             },
             {
               "$type": "Document",

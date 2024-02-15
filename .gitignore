@@ -16,3 +16,10 @@ LearningMVC/.vs/LearningMVC/v17/.suo
 *.dll
 DependencyInjectionCoreApp/obj/Debug/net7.0/apphost.exe
 *.exe
+.vs/ASP.NET-Core-7-MVC-Topics/v17/.wsuo
+*.v2
+*.bin
+*.json
+DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
+*.v2
+*.bin
