@@ -14,24 +14,7 @@ namespace DependencyInjectionCoreApp
             // To Add MVC services to the container
             builder.Services.AddMvc();
 
-            //Add application services 
-
-            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),new TestBankRepository()));  //By default it is singleton
-            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),typeof(BankRepository),ServiceLifetime.Singleton)); 
-            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Transient)); 
-            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Scoped));
-
-            //******Other way to add it *********
-            builder.Services.AddTransient<IBankRepository,BankRepository>();
-            builder.Services.AddTransient<ITestBankRepo, TestBankRepo>();
-
-            //builder.Services.AddSingleton(typeof(IBankRepository), typeof(BankRepository));
-            //builder.Services.AddScoped<IBankRepository, BankRepository>();
-            //builder.Services.AddTransient<IBankRepository, BankRepository>();
-
-
             ////Factory DI process
-
             //var serviceProvider = new ServiceCollection().AddTransient<IShapeFactory, ShapeFactory>().
             //    AddScoped<Sphere>().
             //  AddScoped<IShape, Sphere>(s => (Sphere)s.GetServices<Sphere>()).
@@ -45,6 +28,23 @@ namespace DependencyInjectionCoreApp
                 AddScoped<Cube>();
             builder.Services.AddScoped<Cube>().
               AddScoped<IShape, Cube>(s => (Cube)s.GetServices<Cube>());
+
+
+
+            //Add application services 
+
+            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),new TestBankRepository()));  //By default it is singleton
+            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository),typeof(BankRepository),ServiceLifetime.Singleton)); 
+            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Transient)); 
+            //builder.Services.Add(new ServiceDescriptor(typeof(IBankRepository), typeof(BankRepository), ServiceLifetime.Scoped));
+
+            //******Other way to add it *********
+            builder.Services.AddTransient<IBankRepository, BankRepository>();
+            builder.Services.AddTransient<ITestBankRepo, TestBankRepo>();
+
+            //builder.Services.AddSingleton(typeof(IBankRepository), typeof(BankRepository));
+            //builder.Services.AddScoped<IBankRepository, BankRepository>();
+            //builder.Services.AddTransient<IBankRepository, BankRepository>();
 
             var app = builder.Build();
 

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "SampleViewBag Index";
+
+    var countryInfo = ViewBag.CountryObjInflo;
+
+}
+
+<h1>@ViewBag.HeaderMsg </h1>
+
+<table border="1">
+    <tr>
+        <th>Sno</th>
+        <th>Country Name</th>
+        <th>Country Code</th>
+        <th>Country Capital</th>
+        <th>Country Population</th>
+        <th>Country Description</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>@countryInfo.CountryName </td>
+        <td>@countryInfo.CountryCode</td>
+        <td>@countryInfo.CountryCapital</td>
+        <td>@countryInfo.CountryPopulation</td>
+        <td>@countryInfo.CountryDescription</td>
+    </tr>
+
+</table>
+
+

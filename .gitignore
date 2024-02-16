@@ -23,3 +23,8 @@ DependencyInjectionCoreApp/obj/Debug/net7.0/apphost.exe
 DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
 *.v2
 *.bin
+*.cache
+*.json
+*.bin
+*.editorconfig
+*.cache

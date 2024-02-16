@@ -1,0 +1,30 @@
+﻿@model Country;
+
+@{
+    ViewData["Title"] = "GetCountryDetails";
+}
+
+
+<h1>GetCountryDetails</h1>
+
+<table border="1">
+    <tr>
+        <th>Sno</th>
+        <th>Country Name</th>
+        <th>Country Code</th>
+        <th>Country Capital</th>
+        <th>Country Population</th>
+        <th>Country Description</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td> @Model.CountryName </td>
+        <td> @Model.CountryCode </td>
+        <td> @Model.CountryCapital </td>
+        <td> @Model.CountryPopulation </td>
+        <td> @Model.CountryDescription </td>
+    </tr>
+
+</table>
+
+
