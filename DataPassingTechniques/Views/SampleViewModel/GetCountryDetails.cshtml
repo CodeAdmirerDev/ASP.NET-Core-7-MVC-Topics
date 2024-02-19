@@ -1,0 +1,65 @@
+﻿@model DataPassingTechniques.Models.CountryViewModel
+
+@{
+    ViewData["Title"] = "GetCountryDetails";
+}
+
+<h1>Country Details</h1>
+<div>
+    <label>Country name :</label> @Model.country.CountryName
+</div>
+<div>
+    <label>Country code :</label> @Model.country.CountryCode
+</div>
+<div>
+    <label>Capital :</label> @Model.country.CountryCapital
+</div>
+<div>
+    <label>Description :</label> @Model.country.CountryDescription
+</div>
+<div>
+    <label>Population :</label> @Model.country.CountryPopulation
+</div>
+
+<hr />
+
+
+<h1>Country currency Details</h1>
+<div>
+    <label>CurrencyCode :</label> @Model.CountryCurrency.CountryCurrencyCode
+</div>
+
+<div>
+    <label>Currency name :</label> @Model.CountryCurrency.CountryCurrencyName
+</div>
+
+<div>
+    <label>Currency Value :</label> @Model.CountryCurrency.CountryCurrencyValue
+</div>
+
+
+<hr />
+
+<h1>Country IncomeSource Details</h1>
+<div>
+    <label>Tourism :</label> @Model.CountryIncomeSources.Tourism %
+</div>
+
+<div>
+    <label>ITExports :</label> @Model.CountryIncomeSources.ITExports %
+</div>
+
+<div>
+    <label>Agriculture :</label> @Model.CountryIncomeSources.Agriculture %
+</div> 
+
+
+<div>
+    <label>ITTax :</label> @Model.CountryIncomeSources.ITTax %
+</div>
+
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
