@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var successMsg = TempData["IsCountryDataSaved"] as string;
+}
+
+@if (successMsg != null && successMsg != "")
+{
+    <div>@successMsg</div>
+}else{
+
+<div> Form Re-submission is not allowed. Please close the browser tab.</div>
+}
+
+<a asp-action="Index"> Add another Country Info</a>

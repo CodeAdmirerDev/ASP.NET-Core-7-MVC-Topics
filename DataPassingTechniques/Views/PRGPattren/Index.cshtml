@@ -1,0 +1,48 @@
+﻿@model DataPassingTechniques.Models.Country;
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+
+.error{
+    color:red;
+}
+</style>
+
+<form asp-action="SubmitCountryData" asp-controller="PRGPattren" method="Post">
+
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="CountryName"></label>
+        <input asp-for="CountryName" />
+        <span asp-validation-for="CountryName" class="error"></span>
+    </div>
+
+
+    <div>
+        <label asp-for="CountryCode"></label>
+        <input asp-for="CountryCode" />
+        <span asp-validation-for="CountryCode" class="error"></span>
+    </div>
+    <div>
+        <label asp-for="CountryCapital"></label>
+        <input asp-for="CountryCapital" />
+        <span asp-validation-for="CountryCapital" class="error"></span>
+    </div>
+    <div>
+        <label asp-for="CountryDescription"></label>
+        <input asp-for="CountryDescription" />
+        <span asp-validation-for="CountryDescription" class="error"></span>
+    </div>
+    <div>
+        <label asp-for="CountryPopulation"></label>
+        <input asp-for="CountryPopulation" />
+        <span asp-validation-for="CountryPopulation" class="error"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>

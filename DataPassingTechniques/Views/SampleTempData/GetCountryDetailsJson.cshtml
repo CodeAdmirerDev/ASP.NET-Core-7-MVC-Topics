@@ -1,0 +1,69 @@
+﻿@{
+
+    CountryViewModel countryDetails = new CountryViewModel();
+    @if (TempData["countryDetailsJson"] != null)
+    {
+        string countryJsonDetails = TempData["countryDetailsJson"] as string;
+        TempData.Keep("countryDetailsJson");// If you want to keep the info of this temp key value you have to use keep method
+
+         countryDetails = System.Text.Json.JsonSerializer.Deserialize<CountryViewModel>(countryJsonDetails);
+
+    }
+
+}
+
+
+<h1>Country Details</h1>
+<div>
+    <label>Country name :</label> @countryDetails.country.CountryName
+</div>
+<div>
+    <label>Country code :</label> @countryDetails.country.CountryCode
+</div>
+<div>
+    <label>Capital :</label> @countryDetails.country.CountryCapital
+</div>
+<div>
+    <label>Description :</label> @countryDetails.country.CountryDescription
+</div>
+<div>
+    <label>Population :</label> @countryDetails.country.CountryPopulation
+</div>
+
+<hr />
+
+
+<h1>Country currency Details</h1>
+<div>
+    <label>CurrencyCode :</label> @countryDetails.CountryCurrency.CountryCurrencyCode
+</div>
+
+<div>
+    <label>Currency name :</label> @countryDetails.CountryCurrency.CountryCurrencyName
+</div>
+
+<div>
+    <label>Currency Value :</label> @countryDetails.CountryCurrency.CountryCurrencyValue
+</div>
+
+
+<hr />
+
+<h1>Country IncomeSource Details</h1>
+<div>
+    <label>Tourism :</label> @countryDetails.CountryIncomeSources.Tourism %
+</div>
+
+<div>
+    <label>ITExports :</label> @countryDetails.CountryIncomeSources.ITExports %
+</div>
+
+<div>
+    <label>Agriculture :</label> @countryDetails.CountryIncomeSources.Agriculture %
+</div> 
+
+
+<div>
+    <label>ITTax :</label> @countryDetails.CountryIncomeSources.ITTax %
+</div>
+
