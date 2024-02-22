@@ -122,8 +122,7 @@
               "RelativeToolTip": "Controllers\\BankConstructorDIController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T18:17:29.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-07T18:17:29.702Z"
             },
             {
               "$type": "Document",
@@ -157,7 +156,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T18:00:12.575Z",
               "EditorCaption": ""
