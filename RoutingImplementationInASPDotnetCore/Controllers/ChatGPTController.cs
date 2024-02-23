@@ -11,16 +11,16 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
             return View();
         }
 
-        public IActionResult InfoAboutChatGPT(int version)
+        public IActionResult InfoAboutChatGPT(string version)
         {
 
             ViewBag.Version = version;
-            if (version==3)
+            if (version=="3")
             {
                 TempData["VersionInfo"] = "It's a free ChatGpt version :";
 
             }
-            else if (version==4)
+            else if (version=="4")
             {
                 TempData["VersionInfo"] = "It's a paid ChatGpt version :";
 

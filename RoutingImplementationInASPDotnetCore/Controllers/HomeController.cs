@@ -8,6 +8,7 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        private readonly IRouteConstraint _contextAccessor;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -16,6 +17,7 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
         public IActionResult Index()
         {
             return View();
+
         }
 
         public IActionResult Privacy()

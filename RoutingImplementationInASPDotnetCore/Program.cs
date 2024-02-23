@@ -1,3 +1,5 @@
+using RoutingImplementationInASPDotnetCore.Models.Constraints;
+
 namespace RoutingImplementationInASPDotnetCore
 {
     public class Program
@@ -8,6 +10,11 @@ namespace RoutingImplementationInASPDotnetCore
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddRouting(options =>
+            {
+                options.ConstraintMap.Add("alphabetWithNumeric", typeof(AlphabetWithNumericConstraint));
+            });
 
             var app = builder.Build();
 
@@ -25,21 +32,31 @@ namespace RoutingImplementationInASPDotnetCore
             app.UseRouting();//This will be Used for Routing
 
             app.UseAuthorization();
-            //https://localhost:7296/ChatGPT/Browse
-            app.MapControllerRoute(
-                name: "ChatGPTSearch",
-                pattern: "ChatGPT/Browse",
-                defaults:new {controller = "ChatGPT", action= "Search" });
+            //        //https://localhost:7296/ChatGPT/Browse
+            //        app.MapControllerRoute(
+            //            name: "ChatGPTSearch",
+            //            pattern: "ChatGPT/Browse",
+            //            defaults:new {controller = "ChatGPT", action= "Search" });
 
-            //https://localhost:7296/InfoAboutChatGPT/4
-            app.MapControllerRoute(
-    name: "ChatGPTInfo",
-    pattern: "InfoAboutChatGPT/{version:int}",
-    defaults: new { controller = "ChatGPT", action = "InfoAboutChatGPT" });
+            //        //https://localhost:7296/InfoAboutChatGPT/4
+            //        app.MapControllerRoute(
+            //name: "ChatGPTInfo",
+            //pattern: "InfoAboutChatGPT/{version:int}",
+            //defaults: new { controller = "ChatGPT", action = "InfoAboutChatGPT" });
 
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                name: "ControllerWithMethodOnly",
+                pattern: "{controller}/{action}");
+            app.MapControllerRoute(
+                name: "ControllerWithMethodAndParams",
+                pattern: "{controller}/{action}/{version:alphabetWithNumeric}",
+                defaults:new {controller= "ChatGPT", action= "Search" }
+                );
+
+
+            //app.MapControllerRoute(
+            //    name: "default",
+            //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }
