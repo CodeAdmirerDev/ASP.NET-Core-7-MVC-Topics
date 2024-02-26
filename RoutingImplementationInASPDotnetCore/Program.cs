@@ -16,6 +16,11 @@ namespace RoutingImplementationInASPDotnetCore
                 options.ConstraintMap.Add("alphabetWithNumeric", typeof(AlphabetWithNumericConstraint));
             });
 
+            builder.Services.AddRouting(options =>
+            {
+                options.ConstraintMap.Add("workingDayConstraint", typeof(WorkingDayConstraint));
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -44,19 +49,29 @@ namespace RoutingImplementationInASPDotnetCore
             //pattern: "InfoAboutChatGPT/{version:int}",
             //defaults: new { controller = "ChatGPT", action = "InfoAboutChatGPT" });
 
+
+            /*
+            //Custome route in Convention based routing
             app.MapControllerRoute(
                 name: "ControllerWithMethodOnly",
                 pattern: "{controller}/{action}");
+
             app.MapControllerRoute(
                 name: "ControllerWithMethodAndParams",
                 pattern: "{controller}/{action}/{version:alphabetWithNumeric}",
                 defaults:new {controller= "ChatGPT", action= "Search" }
                 );
+            app.MapControllerRoute(
+                name: "ControllerWithMethodForWeekday",
+                pattern: "{controller}/{action}/{enterTheDate:workingDayConstraint}",
+                defaults: new { controller = "ChatGPT", action = "IsWokringDay" }
+                );
 
+            */
 
-            //app.MapControllerRoute(
-            //    name: "default",
-            //    pattern: "{controller=Home}/{action=Index}/{id?}");
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }

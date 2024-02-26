@@ -34,3 +34,6 @@ DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
 *.v2
 DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
 *.cache
+*.v2
+RoutingImplementationInASPDotnetCore/.vs/RoutingImplementationInASPDotnetCore/v17/.suo
+*.bin

@@ -8,7 +8,6 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IRouteConstraint _contextAccessor;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

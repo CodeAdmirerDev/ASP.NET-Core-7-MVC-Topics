@@ -11,6 +11,12 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
             return View();
         }
 
+        public IActionResult IsWokringDay(string enterTheDate)
+        {
+            TempData["IsWokringDay"] = "It is working Day!";
+            return View();
+        }
+
         public IActionResult InfoAboutChatGPT(string version)
         {
 
