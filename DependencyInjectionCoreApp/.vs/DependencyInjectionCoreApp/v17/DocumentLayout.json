@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\logs\\servicelifetimelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:logs\\servicelifetimelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\controllers\\bankconstructordicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,40 +15,48 @@
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\bankmethoddicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\logs\\servicelifetimelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:logs\\servicelifetimelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\bankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\bankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\testbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\testbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\models\\interfaces\\ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\interfaces\\ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\controllers\\shapecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\shapecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\itestbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\itestbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\testbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\testbankrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\factorydp\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:factorydp\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\models\\interfaces\\ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\interfaces\\ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\controllers\\shapecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:controllers\\shapecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\factorydp\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:factorydp\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\enums\\shapeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,14 +75,6 @@
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:dependencyinjectioncoreapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\repositories\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:repositories\\testbankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|e:\\aspnet7\\asp.net-core-7-mvc-topics\\dependencyinjectioncoreapp\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18081422-9409-4437-B5FF-310C844011D4}|DependencyInjectionCoreApp.csproj|solutionrelative:models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -86,32 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceLifeTimeLog.txt",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Logs\\ServiceLifeTimeLog.txt",
-              "RelativeDocumentMoniker": "Logs\\ServiceLifeTimeLog.txt",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Logs\\ServiceLifeTimeLog.txt",
-              "RelativeToolTip": "Logs\\ServiceLifeTimeLog.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-02-14T16:50:32.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BankRepository.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\BankRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\BankRepository.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\BankRepository.cs",
-              "RelativeToolTip": "Repositories\\BankRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T17:33:16.295Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -120,21 +96,10 @@
               "RelativeDocumentMoniker": "Controllers\\BankConstructorDIController.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\BankConstructorDIController.cs",
               "RelativeToolTip": "Controllers\\BankConstructorDIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T18:17:29.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestBankRepo.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\TestBankRepo.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepo.cs",
-              "RelativeToolTip": "Repositories\\TestBankRepo.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-13T17:01:35.563Z"
+              "WhenOpened": "2024-02-07T18:17:29.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -144,34 +109,72 @@
               "RelativeDocumentMoniker": "Controllers\\BankMethodDIController.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\BankMethodDIController.cs",
               "RelativeToolTip": "Controllers\\BankMethodDIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-08T17:23:52.11Z"
+              "WhenOpened": "2024-02-08T17:23:52.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "ShapeController.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\ShapeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShapeController.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\ShapeController.cs",
+              "RelativeToolTip": "Controllers\\ShapeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-09T19:11:36.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T18:00:12.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IShape.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Interfaces\\IShape.cs",
-              "RelativeDocumentMoniker": "Models\\Interfaces\\IShape.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Interfaces\\IShape.cs",
-              "RelativeToolTip": "Models\\Interfaces\\IShape.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "ServiceLifeTimeLog.txt",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Logs\\ServiceLifeTimeLog.txt",
+              "RelativeDocumentMoniker": "Logs\\ServiceLifeTimeLog.txt",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Logs\\ServiceLifeTimeLog.txt",
+              "RelativeToolTip": "Logs\\ServiceLifeTimeLog.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-02-23T15:24:41.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\BankRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\BankRepository.cs",
+              "RelativeToolTip": "Repositories\\BankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:10:34.814Z"
+              "WhenOpened": "2024-02-07T17:33:16.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjectionCoreApp.csproj",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
+              "RelativeDocumentMoniker": "DependencyInjectionCoreApp.csproj",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
+              "RelativeToolTip": "DependencyInjectionCoreApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-25T18:13:28.515Z"
             },
             {
               "$type": "Document",
@@ -187,7 +190,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\IBankRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IBankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\IBankRepository.cs",
+              "RelativeToolTip": "Repositories\\IBankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T17:18:02.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TestBankRepository.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TestBankRepository.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepository.cs",
+              "RelativeToolTip": "Repositories\\TestBankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-07T19:03:14.496Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "TestBankRepo.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\TestBankRepo.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepo.cs",
+              "RelativeToolTip": "Repositories\\TestBankRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T17:01:35.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IShape.cs",
+              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Interfaces\\IShape.cs",
+              "RelativeDocumentMoniker": "Models\\Interfaces\\IShape.cs",
+              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Interfaces\\IShape.cs",
+              "RelativeToolTip": "Models\\Interfaces\\IShape.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-09T18:10:34.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -199,19 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IBankRepository.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\IBankRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IBankRepository.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\IBankRepository.cs",
-              "RelativeToolTip": "Repositories\\IBankRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T17:18:02.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ShapeFactory.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\FactoryDP\\ShapeFactory.cs",
               "RelativeDocumentMoniker": "FactoryDP\\ShapeFactory.cs",
@@ -223,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ShapeEnum.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Enums\\ShapeEnum.cs",
               "RelativeDocumentMoniker": "Enums\\ShapeEnum.cs",
@@ -235,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "IShapeFactory.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\FactoryDP\\IShapeFactory.cs",
               "RelativeDocumentMoniker": "FactoryDP\\IShapeFactory.cs",
@@ -247,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Sphere.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Sphere.cs",
               "RelativeDocumentMoniker": "Models\\Sphere.cs",
@@ -259,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Cube.cs",
               "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Models\\Cube.cs",
               "RelativeDocumentMoniker": "Models\\Cube.cs",
@@ -268,18 +307,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-09T18:13:47.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ShapeController.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\ShapeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ShapeController.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Controllers\\ShapeController.cs",
-              "RelativeToolTip": "Controllers\\ShapeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T19:11:36.426Z"
             },
             {
               "$type": "Document",
@@ -292,30 +319,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-07T17:17:41.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DependencyInjectionCoreApp.csproj",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
-              "RelativeDocumentMoniker": "DependencyInjectionCoreApp.csproj",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\DependencyInjectionCoreApp.csproj",
-              "RelativeToolTip": "DependencyInjectionCoreApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-02-13T16:54:25.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TestBankRepository.cs",
-              "DocumentMoniker": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\TestBankRepository.cs",
-              "ToolTip": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\Repositories\\TestBankRepository.cs",
-              "RelativeToolTip": "Repositories\\TestBankRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-07T19:03:14.496Z"
             }
           ]
         }

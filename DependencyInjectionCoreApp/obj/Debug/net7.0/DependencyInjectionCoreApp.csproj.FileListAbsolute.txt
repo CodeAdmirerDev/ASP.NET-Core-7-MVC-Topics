@@ -49,3 +49,4 @@ E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DependencyInjectionCoreApp\obj\Debug\net7.0
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DependencyInjectionCoreApp\obj\Debug\net7.0\DependencyInjectionCoreApp.pdb
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DependencyInjectionCoreApp\obj\Debug\net7.0\DependencyInjectionCoreApp.genruntimeconfig.cache
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DependencyInjectionCoreApp\obj\Debug\net7.0\ref\DependencyInjectionCoreApp.dll
+E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DependencyInjectionCoreApp\bin\Debug\net7.0\DependencyInjectionCoreApp.staticwebassets.runtime.json

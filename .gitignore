@@ -28,3 +28,9 @@ DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
 *.bin
 *.editorconfig
 *.cache
+*.bin
+*.exe
+*.pdb
+*.v2
+DependencyInjectionCoreApp/.vs/DependencyInjectionCoreApp/v17/.suo
+*.cache

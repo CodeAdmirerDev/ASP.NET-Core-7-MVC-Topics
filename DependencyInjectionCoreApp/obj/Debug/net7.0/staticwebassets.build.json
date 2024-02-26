@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "rigkI5Ki497lSgGnxiOJLauDyWfZ9J0dUIQVHs/sWNk=",
+  "Hash": "akYU3QikIX0VHhJlMaBCfo4Ls1k8TwtuCFcZLqPjCPg=",
   "Source": "DependencyInjectionCoreApp",
   "BasePath": "_content/DependencyInjectionCoreApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DependencyInjectionCoreApp\\wwwroot",
+      "Source": "DependencyInjectionCoreApp",
+      "ContentRoot": "E:\\ASPNET7\\ASP.NET-Core-7-MVC-Topics\\DependencyInjectionCoreApp\\wwwroot\\",
+      "BasePath": "_content/DependencyInjectionCoreApp",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

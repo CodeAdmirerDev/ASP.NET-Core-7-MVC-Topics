@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logs\" />
+    <Content Include="Logs\ServiceLifeTimeLog.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>
