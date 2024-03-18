@@ -14,15 +14,12 @@
 </style>
 
 <form asp-action="SubmitCountryData" asp-controller="PRGPattren" method="Post">
-
     <div asp-validation-summary="ModelOnly"></div>
     <div>
         <label asp-for="CountryName"></label>
         <input asp-for="CountryName" />
         <span asp-validation-for="CountryName" class="error"></span>
     </div>
-
-
     <div>
         <label asp-for="CountryCode"></label>
         <input asp-for="CountryCode" />
@@ -43,6 +40,5 @@
         <input asp-for="CountryPopulation" />
         <span asp-validation-for="CountryPopulation" class="error"></span>
     </div>
-
     <button type="submit">Submit</button>
 </form>

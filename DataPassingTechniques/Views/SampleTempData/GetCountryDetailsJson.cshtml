@@ -1,19 +1,14 @@
 ﻿@{
-
     CountryViewModel countryDetails = new CountryViewModel();
     @if (TempData["countryDetailsJson"] != null)
     {
         string countryJsonDetails = TempData["countryDetailsJson"] as string;
         TempData.Keep("countryDetailsJson");// If you want to keep the info of this temp key value you have to use keep method
-
-         countryDetails = System.Text.Json.JsonSerializer.Deserialize<CountryViewModel>(countryJsonDetails);
-
+        countryDetails = System.Text.Json.JsonSerializer.Deserialize<CountryViewModel>(countryJsonDetails);
     }
-
 }
 
-
-<h1>Country Details</h1>
+<h1>@TempData["Heading"] of @ViewData["CountryName"]</h1>
 <div>
     <label>Country name :</label> @countryDetails.country.CountryName
 </div>

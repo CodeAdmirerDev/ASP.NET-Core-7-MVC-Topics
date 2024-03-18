@@ -5,12 +5,13 @@ namespace DataPassingTechniques.Controllers
 {
     public class PRGPattrenController : Controller
     {
+
+        static int i = 0;
         public IActionResult Index()
         {
             return View();
         }
-      static int i = 0;
-
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SubmitCountryData(Country country)

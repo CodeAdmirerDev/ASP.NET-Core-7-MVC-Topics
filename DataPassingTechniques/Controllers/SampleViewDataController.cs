@@ -31,14 +31,14 @@ namespace DataPassingTechniques.Controllers
             countryObj.CountryCapital = "New Delhi";
             countryObj.CountryCode = "In";
             countryObj.CountryPopulation = 141000000;
-            countryObj.CountryDescription = "India got the freedom on 1947";
+            countryObj.CountryDescription = "Bharat is from the king Bharata, who was the son of Dushyanta and Shakuntala" +
+                                            " and the term varsa means a division of the earth or a continent.";
 
             ViewData["countryObjInfoFromSample"] = countryObj;
 
             //ViewData will not available for subsequent request 
-            ViewData["countryObjInfoFromHome"] = countryObj; //ViewData["countryObjInfo"]; -- it is from HomeController Index method
-
-
+            ViewData["countryObjInfoFromHome"] = countryObj; //ViewData["countryObjInfo"];
+                                                             //-- it is from HomeController Index method
             return View();
         }
 
