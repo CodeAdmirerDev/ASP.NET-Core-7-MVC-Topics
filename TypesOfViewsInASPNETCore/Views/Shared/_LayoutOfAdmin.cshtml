@@ -9,5 +9,11 @@
     <div>
         @RenderBody()
     </div>
+
+    @if (IsSectionDefined("Scripts"))
+    {
+        @await RenderSectionAsync("Scripts")
+    }
+
 </body>
 </html>

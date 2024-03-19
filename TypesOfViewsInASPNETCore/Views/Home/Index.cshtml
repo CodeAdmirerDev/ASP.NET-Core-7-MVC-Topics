@@ -1,6 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-  //  Layout = "_LayoutOfAdmin";
+    //  Layout = "_LayoutOfAdmin"; specific to current view
+    var userRole = TempData["UserRole"];
+    if (userRole == "Admin")
+    {
+        //  Layout = "_LayoutOfAdmin";
+    }
+    else
+    {
+        //  Layout = "_Layout";
+    }
 }
 
 <div class="text-center">

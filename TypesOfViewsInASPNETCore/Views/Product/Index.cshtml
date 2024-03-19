@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+}
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Desc</th>
+            <th>Stock Available</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach(var prodcut in Model){
+
+            <tr>
+                <td>@prodcut.ProdcutId</td>
+                <td>@prodcut.ProdcutName</td>
+                <td>@prodcut.Description</td>
+                <td>@prodcut.IsInStock</td>
+                <td>@prodcut.Rating</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
