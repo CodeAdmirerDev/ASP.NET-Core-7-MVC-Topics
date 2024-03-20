@@ -5,6 +5,8 @@
 @{
 }
 
+@model List<TypesOfViewsInASPNETCore.Models.Product>
+
 <table>
 
     <thead>
@@ -22,13 +24,7 @@
 
         @foreach(var prodcut in Model){
 
-            <tr>
-                <td>@prodcut.ProdcutId</td>
-                <td>@prodcut.ProdcutName</td>
-                <td>@prodcut.Description</td>
-                <td>@prodcut.IsInStock</td>
-                <td>@prodcut.Rating</td>
-            </tr>
+            @await Html.PartialAsync("_ProductDetails", prodcut)
         }
 
     </tbody>

@@ -1,0 +1,27 @@
+﻿<div>
+
+    <h4>@TempData["Header"]</h4>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Desc</th>
+                <th>Stock Available</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                
+            @* @Html.Partial("_ProductDetails",Model); *@
+
+            <partial name="_ProductDetails" model="Model"></partial>
+
+        </tbody>
+    </table>
+
+</div>

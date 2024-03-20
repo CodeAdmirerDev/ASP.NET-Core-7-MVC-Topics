@@ -5,9 +5,10 @@ namespace TypesOfViewsInASPNETCore.Controllers
 {
     public class ProductController : Controller
     {
-        public ActionResult Index()
+        List<Product> products = new List<Product>();
+        public ProductController()
         {
-            List<Product> products = new List<Product>() { new Product() { Description="Good" , IsInStock=true,
+            products = new List<Product>() { new Product() { Description="Good" , IsInStock=true,
             ProdcutId=1,ProdcutName="SmartPhone", Rating=5},
              new Product() { Description="Good" , IsInStock=true,
             ProdcutId=2,ProdcutName="HeadPhone", Rating=5},
@@ -18,11 +19,24 @@ namespace TypesOfViewsInASPNETCore.Controllers
 
 
              new Product() { Description="Good" , IsInStock=true,
-            ProdcutId=4,ProdcutName="SmartWatch", Rating=5} 
+            ProdcutId=4,ProdcutName="SmartWatch", Rating=5}
             };
+        }
 
-
+        public ActionResult Index()
+        {
             return View(products);
         }
+
+        public ActionResult Details(int ProductId)
+        {
+            TempData["Header"] = "Product Deatails";
+            var ProductInfo = products.Where(p=> p.ProdcutId == ProductId).FirstOrDefault();
+
+            return View(ProductInfo);
+        }
+
+
+
     }
 }
