@@ -22,10 +22,37 @@
 
     <tbody>
 
-        @foreach(var prodcut in Model){
+        @*  ******************************** Partial & PartialAsync  ************************* *@
 
-            @await Html.PartialAsync("_ProductDetails", prodcut)
+        @foreach(var product in Model){
+
+            @* @Html.Partial("_ProductDetails", product) *@
+
+            @await Html.PartialAsync("_ProductDetails", product)
+
+            
         }
+
+@*
+
+        ******************************** RenderPartial & RenderPartialAsync  ******************************
+
+        @{
+            Html.RenderPartial("_ProductDetails", Model);
+        }
+
+        @{
+           await Html.RenderPartialAsync("_ProductDetails", Model);
+        }
+ *@
+
+
+@*
+
+        ******************************** partial tag like HTML syntax  ******************************
+
+        <partial name="_ProductDetails" model="Model"></partial>
+ *@
 
     </tbody>
 </table>

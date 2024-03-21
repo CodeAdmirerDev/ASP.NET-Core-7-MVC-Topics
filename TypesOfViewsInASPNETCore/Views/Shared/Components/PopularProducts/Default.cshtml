@@ -1,0 +1,32 @@
+﻿@model List<TypesOfViewsInASPNETCore.Models.Product>
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Desc</th>
+            <th>Stock Available</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @*  ******************************** Partial & PartialAsync  ************************* *@
+
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProdcutId</td>
+                <td>@product.ProdcutName</td>
+                <td>@product.Description</td>
+                <td>@product.IsInStock</td>
+                <td>@product.Rating</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

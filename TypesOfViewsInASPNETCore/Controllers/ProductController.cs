@@ -36,6 +36,10 @@ namespace TypesOfViewsInASPNETCore.Controllers
             return View(ProductInfo);
         }
 
+        public ActionResult GetTopRatedProducts()
+        {
+            return View();
+        }
 
 
     }
