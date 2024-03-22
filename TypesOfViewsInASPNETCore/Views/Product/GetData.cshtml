@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>@TempData["Msg"]</h2>
+
+@{
+
+    var productInfo = "This Product is a Handmade";
+    Random random = new Random();
+    var productSoldCount = random.NextDouble();
+
+    string userReview = "This product is too good! must buy.";  //Variable declaration in Razor view syntax
+
+    ViewData["Title"] = "Product Info By ProductId";
+
+       List<Product>  products = new List<Product>() { new Product() { Description="Good" , IsInStock=true,
+               ProdcutId=1,ProdcutName="SmartPhone", Rating=5},
+                new Product() { Description="Good" , IsInStock=true,
+               ProdcutId=2,ProdcutName="HeadPhone", Rating=5},
+
+
+    new Product() { Description="Good" , IsInStock=true,
+               ProdcutId=3,ProdcutName="laptop", Rating=5},
+
+
+                new Product() { Description="Good" , IsInStock=true,
+               ProdcutId=4,ProdcutName="SmartWatch", Rating=5}
+               };
+
+       var product = products.FirstOrDefault();
+
+}
+
+<p>  @productInfo and this product sold count is : @productSoldCount   </p>
+<h3>Below is the Product info :</h3>
+
+@* Implicit Razor expression  *@
+<label>Product name : @product.  </label> <br />
+<label>Product Desc : @product.Description </label> <br />
+
+@* Explicit Razor expression  *@
+<label>Product Id : @(product.ProdcutName)  </label> <br />
+<label>Product Rating : @(product.Rating==5)  </label> <br />
+
+<h3>User reviews</h3>
+<ol>
+    <li>@userReview</li> @*  Utilization of Variable in HTML block  *@
+</ol>
+
+<h2>Product no list : </h2>
+@for (int i=0; i<5; i++)
+{
+
+    <ul>
+        <li> Product @i </li> @*  Using HTML code in C# code block *@
+    </ul>
+
+}
+
+@{
+    <br />
+    <text>
+        I am using multi line text
+        to display in the browser
+    </text>
+
+}
+
+
+
+@{
+    @:I am using single line text to display in the browser
+
+}
+
+
+@{
+    string userRole = "Admin";
+
+}
+
+@if (userRole=="Admin1")
+{
+<h1>Hi @userRole , Welcome</h1>
+}
+else
+{
+ <h1 style="color:red;">You are not valid user </h1>   
+}
