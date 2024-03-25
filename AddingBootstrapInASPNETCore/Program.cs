@@ -20,6 +20,7 @@ namespace AddingBootstrapInASPNETCore
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

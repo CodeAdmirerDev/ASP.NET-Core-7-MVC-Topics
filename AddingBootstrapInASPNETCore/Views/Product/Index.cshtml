@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    // Layout = "_LayoutNew";  if you having only one view for the Controller
+}
+
+
+@* <div class="alert alert-warning" role="alert">
+    <h4 class="alert-heading">Product Information</h4>
+    This article provides information about product information management. Product information …
+    Product information is the backbone of supply chain and commerce applications across all industries. It refers to processes and technologies that focus on centrally managing information about products (for example, across supply chains).
+</div>
+
+<button type="button" class="btn btn-success">Submit</button> *@
+
+
+<div class="table-responsive">
+
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th colspan="3">Actions</th>
+                
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach(var product in Model)
+            {
+                
+            <tr>
+                    <td> @product.ProductId  </td>
+
+                    <td> @product.Name  </td>
+                    <td class="text-center"> <a href="#" class="btn btn-primary"> View</a></td>
+                    <td class="text-center"><a href="#" class="btn btn-warning"> Edit </a></td>
+                    <td class="text-center"><a href="#" class="btn btn-danger"> Delete</a></td>
+            </tr>
+            }
+
+        </tbody>
+        
+
+    </table>
+
+</div>
