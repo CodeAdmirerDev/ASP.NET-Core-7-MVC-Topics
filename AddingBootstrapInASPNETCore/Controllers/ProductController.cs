@@ -28,7 +28,7 @@ namespace AddingBootstrapInASPNETCore.Controllers
         public IActionResult ProductDetails(int productNo)
         {
 
-            var productsInfo = products.Where(p=> p.ProductId == productNo);  
+            var productsInfo = products.Where(p=> p.ProductId == productNo).FirstOrDefault();  
             return View(productsInfo);
         }
     }

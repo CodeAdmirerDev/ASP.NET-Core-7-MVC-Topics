@@ -1,4 +1,5 @@
-﻿@*
+﻿@model AddingBootstrapInASPNETCore.Models.Product
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -7,28 +8,44 @@
 <div>
 
     <div class="alert alert-warning" role="alert">
-        <h4 class="alert-heading">@Model[0].Name</h4>
-    @Model[0].Description   
+        <h4 class="alert-heading">This page provides the info about the Product</h4>
+    
     </div>
+    <br />
+    <br />
+
+    <br />
+
+    <br />
 
 
-    <div>
+    <div class="container  justify-content-center" style="display: flex;">
 
-        <h3>Product Category Name : @Model[0].CategoryName </h3>
-                <h3>Is In Stock : @Model[0].IsAvailable </h3>
-    </div>
+        <div class="card">
+        <div class="card-header text-center ">
+            <h4 class="alert-heading">@Model.Name</h4>
+            @Model.Description
+        </div>
+        <div class="card-body text-center">
+        <h3>Product Category Name : @Model.CategoryName </h3>
+                <h3>Is In Stock : @Model.IsAvailable </h3>
 
-    <div>
-        <a>
+        </div>
+   
+
+    <div class="card-footer text-center">
+        <a href="#" class="btn btn-primary">
             Back
         </a>
-        <a>
+        <a href="#" class="btn btn-warning">
             Edit
         </a>
 
-        <a>
+        <a href="#" class="btn btn-danger">
             Delete
         </a>
 
+    </div>
+        </div>
     </div>
 </div>

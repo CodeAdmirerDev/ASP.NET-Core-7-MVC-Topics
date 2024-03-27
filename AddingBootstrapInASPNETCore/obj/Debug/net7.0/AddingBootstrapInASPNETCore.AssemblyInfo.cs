@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddingBootstrapInASPNETCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9dc620b495e8e59a4916af95a03d73c52cc03ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8091e8cdf0dfe681a55e35480aa30e02afbd8079")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddingBootstrapInASPNETCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddingBootstrapInASPNETCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
