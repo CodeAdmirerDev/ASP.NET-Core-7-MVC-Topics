@@ -1,0 +1,21 @@
+﻿@model DifferentTypesOfActionResultsInAspNetCore.Models.Product;
+
+
+<div id="productInfoId" class="text-center">
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "/Demo/GetProductData",
+            success: function (data) {
+                $("#productInfoId").html(data);
+            }
+        });
+    });
+
+</script>

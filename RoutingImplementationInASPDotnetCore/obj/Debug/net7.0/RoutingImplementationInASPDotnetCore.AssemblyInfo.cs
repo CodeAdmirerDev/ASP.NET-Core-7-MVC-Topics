@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoutingImplementationInASPDotnetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+873f931fd444cf88567c6392dc247c427f0b9f24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a3b893ad90353c0abf300edc50df5aab827f37c")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoutingImplementationInASPDotnetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoutingImplementationInASPDotnetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
