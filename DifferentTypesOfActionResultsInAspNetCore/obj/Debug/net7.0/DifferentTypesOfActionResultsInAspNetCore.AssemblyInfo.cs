@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DifferentTypesOfActionResultsInAspNetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a3b893ad90353c0abf300edc50df5aab827f37c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c5f27ea6b05bebbf502891f50edf766d36f13aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DifferentTypesOfActionResultsInAspNetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DifferentTypesOfActionResultsInAspNetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

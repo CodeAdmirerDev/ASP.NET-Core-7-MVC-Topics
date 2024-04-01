@@ -9,13 +9,20 @@
 <script>
 
     $(document).ready(function () {
+
+
         $.ajax({
             type: "GET",
-            url: "/Demo/GetProductData",
+            url: "/Demo/GetProductDataAjaxHeaderCheckWithInTheMethod",
             success: function (data) {
                 $("#productInfoId").html(data);
+            },error: function (error){
+                alert(error);
             }
         });
+
+
+
     });
 
 </script>
