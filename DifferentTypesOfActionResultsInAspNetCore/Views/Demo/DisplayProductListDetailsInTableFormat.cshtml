@@ -1,0 +1,96 @@
+﻿<div class="alert">
+
+    <h1>To get the Product list details ,please click on the below button :</h1> 
+    <input type="button" class="btn btn-success" value="Get Product list details" id="getProductList" />
+</div>
+
+<div class="text-center">
+
+    <table id="productTable" class="table">
+
+        <thead>
+
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Desc</th>
+                <th>Product IsInStock</th>
+                <th>Product Category </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+
+</div>
+
+<div id="deletebuttonDiv">
+    <input type="button" class="btn btn-danger"  value="Clear Table content" id="deleteTableData"/>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $("#productTable").hide();
+        $("#deletebuttonDiv").hide();
+
+
+        
+        $("#deleteTableData").click(function () {
+
+            $("#productTable").hide();
+            $("#deletebuttonDiv").hide();
+        });
+
+    $("#getProductList").click(function () {
+
+
+            $("#productTable tbody tr").remove();
+        $.ajax({
+            type: "GET",
+            url: "/Demo/GetProductListDetails",
+            success: function (data) {
+                $("#productTable").show();
+                var product = "";
+                $.each(data, function (p, product) {
+
+                    var tableRow = "<tr>"
+                        + "<td>" + product.ProductId + "</td>"
+                        + "<td>" + product.ProductName + "</td>"
+                        + "<td>" + product.ProductDescription + "</td>"
+                        + "<td>" + product.IsInStock + "</td>"
+                        + "<td>" + product.ProductCategory + "</td>"
+                        + "</tr>";
+
+                    $("#productTable tbody").append(tableRow);
+
+                });
+
+
+                    $("#deletebuttonDiv").show();
+
+            }, error: function (errorInfo) {
+                alert(errorInfo);
+
+                var errorResponse = jQuery.parseJSON(errorInfo.responseText);
+
+                alert("Error Message :" + errorResponse.Message);
+
+                alert("Error StackTrace :" + errorResponse.StackTrace);
+
+                alert("Error ExceptionType :" + errorResponse.ExceptionType);
+
+            }
+        });
+
+
+    });
+    
+});
+
+
+</script>
