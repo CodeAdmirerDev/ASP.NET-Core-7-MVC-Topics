@@ -11,9 +11,9 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
             return View();
         }
 
-        public IActionResult IsWokringDay(string enterTheDate)
+        public IActionResult IsWorkingDay(string inputDate)
         {
-            TempData["IsWokringDay"] = "It is working Day!";
+            TempData["IsWorkingDay"] = inputDate+"is working Day!";
             return View();
         }
 

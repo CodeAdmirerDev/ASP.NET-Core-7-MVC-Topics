@@ -37,17 +37,8 @@ namespace RoutingImplementationInASPDotnetCore
             app.UseRouting();//This will be Used for Routing
 
             app.UseAuthorization();
-            //        //https://localhost:7296/ChatGPT/Browse
-            //        app.MapControllerRoute(
-            //            name: "ChatGPTSearch",
-            //            pattern: "ChatGPT/Browse",
-            //            defaults:new {controller = "ChatGPT", action= "Search" });
 
-            //        //https://localhost:7296/InfoAboutChatGPT/4
-            //        app.MapControllerRoute(
-            //name: "ChatGPTInfo",
-            //pattern: "InfoAboutChatGPT/{version:int}",
-            //defaults: new { controller = "ChatGPT", action = "InfoAboutChatGPT" });
+
 
 
             /*
@@ -66,6 +57,25 @@ namespace RoutingImplementationInASPDotnetCore
                 pattern: "{controller}/{action}/{enterTheDate:workingDayConstraint}",
                 defaults: new { controller = "ChatGPT", action = "IsWokringDay" }
                 );
+
+            */
+
+            /*
+
+            //Configure Multiple Conventional Routing in ASP.NET Core MVC Application
+
+            //https://localhost:7296/ChatGPT/Browse
+            app.MapControllerRoute(
+                name: "ChatGPTBrowse",
+                pattern: "ChatGPT/Browse",
+                defaults: new { controller = "ChatGPT", action = "Search" });
+
+
+            //https://localhost:7296/IsWorkingDayInBharat/04-04-2024
+            app.MapControllerRoute(
+                name: "WorkingDayInfo",
+                pattern: "IsWorkingDayInBharat/{inputDate:string}",
+                defaults: new { controller = "ChatGPT", action = "IsWorkingDay" });
 
             */
 
