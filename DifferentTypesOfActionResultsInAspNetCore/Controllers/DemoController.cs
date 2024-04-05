@@ -239,7 +239,7 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
                 // To generate 1000's of data by using for loop like below 
 
 
-                for (long i=100000000; i>0; i--)
+                for (long i=100; i>0; i--)
                 {
 
                     if (i / 2 == 0)
