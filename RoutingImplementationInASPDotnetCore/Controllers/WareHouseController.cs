@@ -7,6 +7,89 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
     public class WareHouseController : Controller
     {
 
+
+        //To Ignore the Route Attribute Placed at the Controller Level 
+
+        [Route("~/AboutWareHouse")]
+        public string AboutWareHouse()
+        {
+            return "Welcome to WareHouse department. Please contact for more info wastore@admin.com";
+        }
+
+
+
+        //With Route attribute on Controller 
+        [Route("")]
+        [Route("/")]
+        [Route("Index")]
+        public string Index()
+        {
+            return "Welcome to WareHouse department.";
+        }
+
+        [Route("WareHouseDetails/{location}")]
+        public string WareHouseDetails(string location)
+        {
+            return "Welcome to WareHouse department.";
+        }
+
+
+        /*
+            //Adding Route using HTTP Methods
+            [HttpGet("")]
+            [HttpGet("/")]
+            [HttpGet("Index")]
+            public string Index()
+            {
+                return "Welcome to WareHouse department.";
+            }
+
+            [HttpGet("WareHouseDetails/{location}")]
+            public string WareHouseDetails(string location)
+            {
+                return "Welcome to WareHouse department.";
+            }
+
+            [HttpGet("~/AboutWareHouse")]
+            public string AboutWareHouse()
+            {
+                return "Welcome to WareHouse department. Please contact for more info wastore@admin.com";
+            }
+
+       */
+
+        /*
+             //Without Route attribute on Controller 
+             [Route("")]
+             [Route("WareHouse")]
+             [Route("WareHouse/Index")]
+             public string Index()
+             {
+                 return "Welcome to WareHouse department.";
+             }
+
+             [Route("WareHouse/WareHouseDetails/{location}")]
+             public string WareHouseDetails(string location )
+             {
+                 return "Welcome to WareHouse department.";
+             }
+        */
+
+
+
+        [Route("AboutWareHouse1")]
+        public JsonResult GetWareHouseDetails1()
+        {
+            return Json("It is located in AP");
+        }
+
+        public JsonResult GetWareHouseDetails2()
+        {
+            return Json("It is located in TS");
+        }
+
+
+
         List<Product> products;
         public WareHouseController()
         {
@@ -28,15 +111,15 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
             return Json(products);
         }
 
-        [Route("GetJsonData/{prodcutId}")]  // For Param value to pass in Attribute routing
-        public JsonResult GetJsonData(int prodcutId)
+        [Route("GetJsonData/{productId}")]  // For Param value to pass in Attribute routing
+        public JsonResult GetJsonData(int productId)
         {
-            return Json(products.Where(product=> product.ProductId==prodcutId).FirstOrDefault());
+            return Json(products.Where(product=> product.ProductId==productId).FirstOrDefault());
         }
 
         //(You have to specify the ? post the param name)
-        [Route("GetJsonWareHouseData/{isFromVendor?}")] // For Optional Param value to pass in Attribute routing 
-        public JsonResult GetJsonWareHouseData(string isFromVendor="Yes")
+        [Route("GetJsonWDataWithOptionalParam/{isFromVendor?}")] // For Optional Param value to pass in Attribute routing 
+        public JsonResult GetJsonWareHouseDataWithOptionalParam(string isFromVendor="Yes")
         {
             if (isFromVendor=="Yes")
             {
@@ -44,9 +127,23 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
             }
             else
             {
-                return Json(products.Where(prodcut=> prodcut.IsInStock== true));
+                return Json(products.Where(product=> product.IsInStock== true));
             }
         }
+
+        [Route("GetJsonWareHouseData/{isFromVendor}")]
+        public JsonResult GetJsonWareHouseData(string isFromVendor)
+        {
+            if (isFromVendor == "Yes")
+            {
+                return Json(products);
+            }
+            else
+            {
+                return Json(products.Where(product => product.IsInStock == true));
+            }
+        }
+
 
         // For adding param validation we can specify the Constraint name post the param name and put the : symbol
         [Route("GetJsonWareHouseData/{isFromAI:alphabetWithNumeric}")] 
@@ -63,15 +160,15 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
         }
 
 
-        public IActionResult GetProdcutList()
+        public IActionResult GetProductList()
         {
             return View(products);
         }
 
 
         //If you want to Ignore the Route Attribute placed at the Controller level (~/ use in front of Route value)
-        [Route("~/prodcut/{productIdValue}/info")]
-        public IActionResult GetProdcutInfoByProdId(int productIdValue)
+        [Route("~/product/{productIdValue}/info")]
+        public IActionResult GetProductInfoByProdId(int productIdValue)
         {
             Product? product = products.Where(prod => prod.ProductId== productIdValue).FirstOrDefault();
 
@@ -88,8 +185,8 @@ namespace RoutingImplementationInASPDotnetCore.Controllers
         }
 
 
-        [Route("~/AboutWareHouse1")]
-        public JsonResult GetWareHouseDetails1()
+        [Route("~/GetWareHouseDetailsJson")]
+        public JsonResult GetWareHouseDetailsJson()
         {
             return Json("It is located in AP");
         }

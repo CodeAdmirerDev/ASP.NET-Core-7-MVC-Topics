@@ -1,4 +1,4 @@
-using RoutingImplementationInASPDotnetCore.Models.Constraints;
+﻿using RoutingImplementationInASPDotnetCore.Models.Constraints;
 
 namespace RoutingImplementationInASPDotnetCore
 {
@@ -11,11 +11,22 @@ namespace RoutingImplementationInASPDotnetCore
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            //Method 1: Configuring the Custom Route Constraint Service using the AddRouting Method​
             builder.Services.AddRouting(options =>
             {
                 options.ConstraintMap.Add("alphabetWithNumeric", typeof(AlphabetWithNumericConstraint));
             });
 
+            /*
+
+                    //Method 2: Configuring the Custom Route Constraint Service using the Configure Method​
+                    builder.Services.Configure<RouteOptions>(routeoptions =>
+                    {
+                        routeoptions.ConstraintMap.Add("alphabetWithNumeric", typeof(AlphabetWithNumericConstraint));
+                    });
+
+            */
+            
             builder.Services.AddRouting(options =>
             {
                 options.ConstraintMap.Add("workingDayConstraint", typeof(WorkingDayConstraint));
@@ -42,21 +53,22 @@ namespace RoutingImplementationInASPDotnetCore
 
 
             /*
-            //Custome route in Convention based routing
-            app.MapControllerRoute(
-                name: "ControllerWithMethodOnly",
-                pattern: "{controller}/{action}");
+             
+                //Custom route in Convention based routing
+                app.MapControllerRoute(
+                    name: "ControllerWithMethodOnly",
+                    pattern: "{controller}/{action}");
 
-            app.MapControllerRoute(
-                name: "ControllerWithMethodAndParams",
-                pattern: "{controller}/{action}/{version:alphabetWithNumeric}",
-                defaults:new {controller= "ChatGPT", action= "Search" }
-                );
-            app.MapControllerRoute(
-                name: "ControllerWithMethodForWeekday",
-                pattern: "{controller}/{action}/{enterTheDate:workingDayConstraint}",
-                defaults: new { controller = "ChatGPT", action = "IsWokringDay" }
-                );
+                app.MapControllerRoute(
+                    name: "ControllerWithMethodAndParams",
+                    pattern: "{controller}/{action}/{version:alphabetWithNumeric}",
+                    defaults:new {controller= "ChatGPT", action= "Search" }
+                    );
+                app.MapControllerRoute(
+                    name: "ControllerWithMethodForWeekday",
+                    pattern: "{controller}/{action}/{enterTheDate:workingDayConstraint}",
+                    defaults: new { controller = "ChatGPT", action = "IsWokringDay" }
+                    );
 
             */
 
