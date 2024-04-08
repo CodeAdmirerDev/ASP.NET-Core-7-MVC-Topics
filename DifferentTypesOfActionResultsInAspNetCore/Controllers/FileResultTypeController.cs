@@ -21,7 +21,7 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
             return File(pdfContentBytesInformation,"application/pdf","DemoData.pdf");
         }
 
-        public FileResult DispalyPdfFile()
+        public FileResult DisplayPdfFile()
         {
 
             //Get the file location 
@@ -73,11 +73,37 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
 
             //Convert the file content into byte[] using I/O
 
-            byte[] pdfContentBytesInformation = System.IO.File.ReadAllBytes(filePath);
+            byte[] imageContentBytesInformation = System.IO.File.ReadAllBytes(filePath);
 
             // Return the byte array 
 
-            return File(pdfContentBytesInformation, "image/jpeg", "SampleCode.jpg");
+            return File(imageContentBytesInformation, "image/jpeg", "SampleCode.jpg");
+        }
+
+
+        public FileResult DisplayImage()
+        {
+
+            //Get the file location 
+
+            string filePath = Directory.GetCurrentDirectory() + "\\wwwroot\\Images\\" + "FileResultExample.jpg";
+
+            //Convert the file content into byte[] using I/O
+
+            byte[] pdfContentBytesInformation = System.IO.File.ReadAllBytes(filePath);
+
+            var contentDispostion = new ContentDisposition
+            {
+                FileName = "SampleCode.jpg",
+                Inline = true, //If you want to display the file in the browser
+            };
+
+            Response.Headers.Add("Content-Disposition", contentDispostion.ToString());
+
+
+            // Return the byte array 
+
+            return File(pdfContentBytesInformation, "image/jpeg");
         }
 
     }

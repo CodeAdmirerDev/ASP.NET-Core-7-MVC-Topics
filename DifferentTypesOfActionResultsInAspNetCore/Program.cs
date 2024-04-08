@@ -26,6 +26,13 @@ namespace DifferentTypesOfActionResultsInAspNetCore
 
             app.UseAuthorization();
 
+            //Added a new custom route
+            app.MapControllerRoute(
+                name: "DetailsOfRedirectToRouteResult",
+                pattern: "routeDetails",
+                defaults: new { controller = "RedirectResultType", action = "RouteDetails" }
+                );
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

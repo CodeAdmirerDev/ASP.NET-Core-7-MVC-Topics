@@ -52,7 +52,7 @@
             $("#productTable tbody tr").remove();
         $.ajax({
             type: "GET",
-            url: "/Demo/GetProductListDetails",
+                url: "/JsonResultType/GetProductListDetails",
             success: function (data) {
                 $("#productTable").show();
                 var product = "";
