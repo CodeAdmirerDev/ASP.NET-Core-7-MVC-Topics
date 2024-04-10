@@ -22,6 +22,11 @@ namespace TypesOfViewsInASPNETCore.Controllers
             return View();
         }
 
+
+        public IActionResult ViewStartExample()
+        {
+            return View();
+        }
         public ViewResult Details()
         {
             return View();
