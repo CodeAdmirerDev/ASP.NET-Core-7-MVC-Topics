@@ -1,5 +1,3 @@
-E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\TypesOfViewsInASPNETCore\bin\Debug\net7.0\appsettings.Development.json
-E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\TypesOfViewsInASPNETCore\bin\Debug\net7.0\appsettings.json
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\TypesOfViewsInASPNETCore\bin\Debug\net7.0\TypesOfViewsInASPNETCore.staticwebassets.runtime.json
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\TypesOfViewsInASPNETCore\bin\Debug\net7.0\TypesOfViewsInASPNETCore.exe
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\TypesOfViewsInASPNETCore\bin\Debug\net7.0\TypesOfViewsInASPNETCore.deps.json

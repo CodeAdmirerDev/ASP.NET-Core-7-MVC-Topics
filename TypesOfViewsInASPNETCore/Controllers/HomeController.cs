@@ -17,11 +17,20 @@ namespace TypesOfViewsInASPNETCore.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult SectionsIndex()
         {
             return View();
         }
+
+        public ViewResult Details()
+        {
+            return View();
+        }
+        public ViewResult SectionsDetails()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
