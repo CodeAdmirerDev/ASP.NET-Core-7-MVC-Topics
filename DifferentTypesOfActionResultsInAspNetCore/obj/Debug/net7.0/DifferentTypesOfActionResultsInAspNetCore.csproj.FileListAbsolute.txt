@@ -220,3 +220,5 @@ E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\o
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\obj\Debug\net7.0\DifferentTypesOfActionResultsInAspNetCore.pdb
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\obj\Debug\net7.0\DifferentTypesOfActionResultsInAspNetCore.genruntimeconfig.cache
 E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\obj\Debug\net7.0\ref\DifferentTypesOfActionResultsInAspNetCore.dll
+E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\ASPNET7\ASP.NET-Core-7-MVC-Topics\DifferentTypesOfActionResultsInAspNetCore\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll

@@ -8,7 +8,8 @@ namespace DifferentTypesOfActionResultsInAspNetCore
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            //For allowing the response from Object to XML 
+            builder.Services.AddMvcCore().AddXmlSerializerFormatters();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
