@@ -1,0 +1,32 @@
+﻿@* If you want to generate the Textbox in HTML *@
+
+<label for="usernameIdHTML">Username :</label>
+<input  type="text" id="usernameIdHTML"  class="clsusername" style="color:red;" placeholder="Please enter username" readonly/>
+
+@* If you want to generate the Textbox in HTML Helpers *@
+
+@Html.Label("usernameId", "Username :")
+@Html.TextBox("usernameId", null, new { @class = "clsusername",  @readonly = "true",maxlegnth=10, style = "color:red; font-weight:200;", title = "Please enter username", placeholder = "Please enter username" })
+
+
+<label for="pwdIdHtml">Username :</label>
+<input type="password" id="pwdIdHtml" />
+
+@Html.Label("pwdId","Password :")
+@Html.Password("pwdId")
+
+<label>Address :</label>
+<textarea cols="6" rows="6" ></textarea>
+
+@Html.Label("Address", "Address :")
+@Html.TextArea("Address","",6,6,null)
+
+
+<input type="hidden"  value="SDHCHDMDMDMMD" id="userKeyHTML"/>
+@Html.Hidden("userKey", "SDHCHDMDMDMMD")
+
+<partial name="_ProductDetails" ></partial>
+
+
+
+
