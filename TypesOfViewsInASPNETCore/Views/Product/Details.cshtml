@@ -16,13 +16,7 @@
         </thead>
 
         <tbody>
-                
-              @Html.Partial("_ProductDetails",Model);
-
-              @* @await Html.PartialAsync("_ProductDetails", Model) *@
-
             <partial name="_ProductDetails" model="Model"></partial>
-
         </tbody>
     </table>
 

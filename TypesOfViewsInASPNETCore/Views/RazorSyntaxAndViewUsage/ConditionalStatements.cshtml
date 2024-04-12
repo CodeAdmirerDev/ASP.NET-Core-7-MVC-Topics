@@ -1,0 +1,106 @@
+﻿@* If and Else Conditions​
+
+If Condition is used to render a section based on a condition as shown below.​
+ *@
+@{
+    int value = 200;
+}
+
+@if (value > 100)
+{
+    <p>Value is greater than 100</p>
+}
+else
+{
+    <p>Value is less than 100</p>
+}
+
+@* Or you can use the following code. *@
+
+@{
+    var value = 200;
+    if (value > 100)
+    {
+        <p>The value is greater than 100</p>
+    }
+    else
+    {
+        <p>This value is less than 100</p>
+    }
+}
+@* 
+Switch Statements in Razor View
+A switch statement can insert a section into HTML based on a number of conditions. *@
+
+@{
+    var value = 200;
+}
+
+@switch (value)
+{
+    case 0:
+        @: value is Zero
+        break;
+    case 100:
+        <p>Value is 100 </p>
+        break;
+    case 200:
+        <p>Value is @value </p>
+        break;
+    case 300:
+        <text>Value is 300</text>
+        break;
+    default:
+        <p>Invalid Value </p>
+        break;
+}
+
+@* Loops
+For loop
+The loops are used to repeat a code block for, *@
+
+@for (int i = 0; i < 5; i++)
+{
+    <span> @i </span>
+}
+@* 
+Foreach loop
+The best use case of a for-each loop is to loop through a collection object and display the result inside a table. *@
+
+@using TypesOfViewsInASPNETCore.Models
+
+@{
+    var productList = new List<Product>()
+    {
+        new Product() { ProductID = 1001, Name = "Laptop", Price = 1000 },
+        new Product() { ProductID = 1002, Name = "Desktop", Price = 2000 },
+        new Product() { ProductID = 1002, Name = "Mobile", Price = 3000 }
+    };
+}
+
+<table>
+    <thead>
+        <tr><td>ProductID</td><td>Name</td><td>Price</td></tr>
+    </thead>
+    @foreach (Product product in productList)
+    {
+        <tr>
+            <td>@product.ProductID</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+        </tr>
+    }
+</table>
+
+@* While loop: *@
+
+<h3>While loop</h3>
+@{
+    var r = 0;
+    while (r < 5)
+    {
+        r += 1;
+        <span> @r</span>
+    }
+}
+

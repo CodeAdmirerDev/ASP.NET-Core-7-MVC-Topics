@@ -1,0 +1,27 @@
+﻿<h3>Code Block</h3>
+
+@{
+    var greeting = "Welcome to ASP.NET Core MVC!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var product = new TypesOfViewsInASPNETCore.Models.Product()
+            {
+                ProdcutId = 1000,
+                ProdcutName = "Laptop",
+                Description = "Its a Gaming Laptop",
+                IsInStock = true,
+                Rating = 10
+            };
+}
+
+<h3>Code Expression</h3>
+
+<p>@(greeting)</p>
+<p>@(DateTime.Now)</p>
+<p>Today is : @(weekDay) thank you </p>
+<p>Name : @(product.ProdcutName )</p>
+<p>Description : @(product.Description )</p>
+<p>Rating : @(product.Rating)</p>

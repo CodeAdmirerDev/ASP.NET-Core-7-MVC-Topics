@@ -1,0 +1,19 @@
+﻿@using TypesOfViewsInASPNETCore.Models
+<h3>Code Block</h3>
+
+@{
+    var greeting = "Welcome to ASP.NET Core MVC!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var product = new TypesOfViewsInASPNETCore.Models.Product()
+            {
+                ProdcutId = 1000,
+                ProdcutName = "Laptop",
+                Description = "Its a Gaming Laptop",
+                IsInStock = true,
+                Rating = 10
+            };
+}

@@ -1,0 +1,42 @@
+﻿<h3>Variables </h3>
+
+<!-- Storing a string -->
+@{
+    string message = "Welcome to ASP.NET Core MVC";
+}
+
+<!—Storing date and integer-->
+    @{
+        DateTime date = DateTime.Now;
+        int Number = 100;
+    }
+
+<p>@message</p>
+<p> The current date is @date</p>
+<p>Numbers : @Number</p>
+
+@* 
+Strings are enclosed in double quotation marks. To use a double quotation mark inside the string, 
+use a verbatim string literal. The verbatim string is prefixed with the @ symbol and repeats the quotation mark. *@
+
+    @{
+        var helloWorld = @"Hello ""World""";
+    }
+<p>@helloWorld</p>
+
+@* Similarly, backslash characters can be printed using the same technique. *@
+
+    @{
+        var Path = @"C:\Windows\";
+    }
+<p>The path is: @Path</p>
+
+@* You can print @ in HTML by repeating (Escape) the @ symbol as shown below. *@
+
+    @{
+        var symbol = "You can print @ in html";
+    }
+<p>The @@symbol is: @symbol</p>
+
+
+

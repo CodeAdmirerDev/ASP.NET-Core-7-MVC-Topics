@@ -41,11 +41,7 @@ namespace TypesOfViewsInASPNETCore.Controllers
             return View();
         }
 
-        //Razor View engine example
-        public ActionResult GetData()
-        {
+      
 
-            return View();
-        }
     }
 }
