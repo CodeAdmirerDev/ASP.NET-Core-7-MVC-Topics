@@ -1,0 +1,14 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Product Info Page";
+    Layout = "_Layout";
+}
+
+<div class="text-left">
+    <p>Product ID: @Model.ProductId </p>
+    <p>Product Name: @Model.ProductName </p>
+    <p>Product Description : @Model.ProductDescription </p>
+    <p> Product Category: @Model.ProductCategory </p>
+    <p>IsInStock: @Model.IsInStock </p>
+</div>
+

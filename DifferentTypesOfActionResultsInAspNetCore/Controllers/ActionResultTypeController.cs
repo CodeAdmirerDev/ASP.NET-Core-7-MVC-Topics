@@ -4,19 +4,12 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
 {
     public class ActionResultTypeController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         public IActionResult Error()
         {
             return View();
         }
 
-
-
-        //ActionResult is a base class
+        //ActionResult is a Abstract class
         public ActionResult GetInfo(string typeOfInfo)
         {
             if (typeOfInfo == "HTML")
@@ -32,7 +25,6 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
             {
                 return RedirectToAction("Error");
             }
-
         }
 
 
