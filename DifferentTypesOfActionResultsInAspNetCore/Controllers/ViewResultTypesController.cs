@@ -68,23 +68,16 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
 
         public PartialViewResult GetProductDataAjaxHeaderCheckWithInTheMethod()
         {
-
             /*
-             * 
             To understand about the process , execute Demo/Index then
-                you will get the Product Info As Index page having the ajax call.
+            you will get the Product Info As Index page having the ajax call.
             Where as If you are calling the Demo/GetProductDataAjaxHeaderCheckWithInTheMethod method directly it will
-                throw true error because it is not a Ajax method
-
+            throw true error because it is not a Ajax method
             */
-
             string method = HttpContext.Request.Method;
-
             string requestedWith = HttpContext.Request.Headers["X-Requested-With"];
-
             if (method=="GET")
             {
-
                 if(requestedWith== "XMLHttpRequest")
                 {
                     Product product = new Product()
@@ -95,15 +88,11 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
                         IsInStock = true,
                         ProductDescription = "Dell laptop having 8GB RAM and 1TB HDD"
                     };
-
                     return PartialView("_ProductInfo", product);
-
-
                 }
             }
             //If the request is not matched with our requirement then will display the content of _InvalidPartialView
             return PartialView("_InvalidPartialView");
-
         }
 
 
