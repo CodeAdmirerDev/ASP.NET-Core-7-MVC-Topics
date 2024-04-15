@@ -1,7 +1,7 @@
 ﻿@model HTMLHelpersInASP.NETCoreMVC.Models.Product
 
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#employeeModal">
-  Edit Product
+    Edit Product
 </button>
 
 
@@ -17,27 +17,42 @@
                     <div class="mb-3">
                         @Html.Label("productname", "Product Name :")
                         @Html.TextBoxFor(prodcut => prodcut.ProdcutName, new { @class = "form-control", @id = "productname" })
-                       @* <label for="name" class="col-form-label">Product Name:</label>
+                        @* <label for="name" class="col-form-label">Product Name:</label>
                         <input type="text" class="form-control" id="productname"> *@
                     </div>
                     <div class="mb-3">
                         @Html.Label("textAreaExample", "Product Description :")
                         @Html.TextAreaFor(prodcut => prodcut.Description, new { @class = " form-control", @rows = "4", @id = "textAreaExample" })
-                        
-                      @* <label for="textAreaExample" class="col-form-label">Description :</label>
+
+                        @* <label for="textAreaExample" class="col-form-label">Description :</label>
                         <textarea class="form-control" id="textAreaExample" rows="4"></textarea> *@
                     </div>
                     <div class="mb-3">
                         @Html.Label("isInStock", "Product IsInStock :")
-                        @Html.TextBoxFor(prodcut => prodcut.IsInStock , new { @class = "form-control", @id = "isInStock" })
-                       @*  <label for="position" class="col-form-label">IsInStock:</label>
+                        @Html.TextBoxFor(prodcut => prodcut.IsInStock, new { @class = "form-control", @id = "isInStock" })
+                        @*  <label for="position" class="col-form-label">IsInStock:</label>
                         <input type="text" class="form-control" id="position"> *@
                     </div>
                     <div class="mb-3">
                         @Html.Label("ratingid", "Product Rating :")
-                        @Html.TextBoxFor(prodcut => prodcut.Rating , new { @class = "form-control", @id = "ratingid" })
-                       @*  <label for="position" class="col-form-label">Rating:</label>
+                        @Html.TextBoxFor(prodcut => prodcut.Rating, new { @class = "form-control", @id = "ratingid" })
+                        @*  <label for="position" class="col-form-label">Rating:</label>
                         <input type="text" class="form-control" id="position"> *@
+                    </div>
+
+                    <div class="mb-3">
+
+                        @foreach (var warranty in @Model.warrantyOfProducts)
+                        {
+                            @Html.RadioButton("WarrentyOfProduct", warranty.Id, new { @class = "form-check-input" })
+                            @warrenty.WarrentyYears
+                        };
+
+                       @* 
+                        // Basic example for RadioButton
+                        Male : @Html.RadioButton("Gender", "Male")
+                        Female : @Html.RadioButton("Gender", "Female")
+                        Others : @Html.RadioButton("Gender", "others") *@
                     </div>
                 </div>
                 <div class="modal-footer">
