@@ -16,7 +16,7 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         @Html.Label("productname", "Product Name :")
-                        @Html.TextBoxFor(product => product.ProductName, new { @class = "form-control", @id = "productname" })
+                        @Html.TextBoxFor(prodcut => prodcut.ProductName, new { @class = "form-control", @id = "productname" })
                         @* <label for="name" class="col-form-label">Product Name:</label>
                         <input type="text" class="form-control" id="productname"> *@
                     </div>
@@ -83,7 +83,6 @@
 
                         }
                     </div>
-
                    @*  <div class="mb-3">
 
                         @foreach (var warranty in @Model.warrantyOfProducts)
@@ -92,13 +91,41 @@
                             @warranty.WarrantyYears
                         }
                     </div> *@
+                           
+
+                    <div class="mb-3">
+
+                       @*
+                           
+                        //Basic example for CheckBox
+                        @Html.CheckBox("IsAdmin")
+                        <input type="checkbox" name="IsAdmin" checked />
+
+                        *@
+
+                        @foreach (var featureObj in @Model.productFeatures)
+                        {
+                            @Html.CheckBox(featureObj.FeatureName,featureObj.defaultFeature) @featureObj.FeatureName
+                        }
 
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                    </div>
+
+                    @* <div class="mb-3">
+
+                        @for (int i = 0; i < Model.productFeatures.Count; i++)
+                        {
+
+                            @Html.CheckBoxFor(product => product.productFeatures[i].defaultFeature) @Model.productFeatures[i].FeatureName
+                        }
+                    </div> *@
+
+                           
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
             </form>
         </div>
     </div>

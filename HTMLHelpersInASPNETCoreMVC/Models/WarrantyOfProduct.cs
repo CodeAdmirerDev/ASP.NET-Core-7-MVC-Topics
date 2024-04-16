@@ -4,5 +4,7 @@
     {
         public int Id { get; set; }
         public string WarrantyYears { get; set; }
+        public bool defaultWarranty { get; set; }
+
     }
 }
