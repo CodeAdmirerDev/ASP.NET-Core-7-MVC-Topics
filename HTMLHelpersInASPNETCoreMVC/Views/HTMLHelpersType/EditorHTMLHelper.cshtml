@@ -1,0 +1,57 @@
+﻿@model HTMLHelpersInASP.NETCoreMVC.Models.Product
+
+<table>
+
+    <tr>
+    <th>ProductId</th>
+        <td>@Html.Editor("ProductId")</td>
+    </tr>
+
+    <tr>
+    <th>ProductName</th>
+    <td>@Html.Editor("ProductName")</td>
+    </tr>
+
+    <tr>
+        <th>Description</th>
+        <td>@Html.Editor("Description")</td>
+    </tr>
+
+    <tr>
+        <th>IsInStock</th>
+        <td>@Html.Editor("IsInStock")</td>
+    </tr>
+
+    <tr>
+        <th>Rating</th>
+        <td>@Html.Editor("Rating")</td>
+    </tr>
+
+    <tr>
+        <th>SelectedBranch</th>
+        <td>@Html.Editor("SelectedBranch")</td>
+    </tr>
+
+    <tr>
+        <th>productMemberShipTypes</th>
+        <td>@Html.Editor("productMemberShipTypes")</td>
+        <td>@Html.EditorFor(prodcut => prodcut.productMemberShipTypes)</td>
+    </tr>
+
+    <tr>
+        <th>ProductCategory</th>
+        <td>@Html.Editor("ProductCategory")</td>
+    </tr>
+
+    <tr>
+        <th>MadeInCountry</th>
+        <td>@Html.Editor("MadeInCountry")</td>
+    </tr>
+
+
+    <tr>
+        <th>CreatedDate</th>
+        <td>@Html.Editor("CreatedDate")</td>
+    </tr>
+
+</table>

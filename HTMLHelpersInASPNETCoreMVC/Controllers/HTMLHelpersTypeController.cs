@@ -140,5 +140,68 @@ namespace HTMLHelpersInASP.NETCoreMVC.Controllers
             return View(product);
         }
 
+        public IActionResult ListBoxHelperView()
+        {
+
+            Product product = getBasicProductInfo();
+            product.ProductCategory = "SmartTV";
+            product.MadeInCountry = "India";
+
+            ViewBag.ListproductCategories = new List<SelectListItem>
+            {
+                 new SelectListItem{ Text="Please select Category" , Value="0", Selected=true},
+                new SelectListItem{ Text="SmartPhone" , Value="1" },
+                new SelectListItem{ Text="SmartTV" , Value="2" },
+                new SelectListItem{ Text="Fridge" , Value="3"},
+            };
+
+            ViewBag.ListCountries = new List<SelectListItem>
+            {
+                 new SelectListItem{ Text="Please select Country" , Value="0", Selected=true},
+                new SelectListItem{ Text="India" , Value="1" },
+                new SelectListItem{ Text="USA" , Value="2" },
+                new SelectListItem{ Text="Russia" , Value="3"},
+            };
+
+            product.warrantyOfProducts = new List<WarrantyOfProduct>
+            {
+
+                new WarrantyOfProduct { Id = 1, WarrantyYears = "0-5 Years"},
+                new WarrantyOfProduct { Id = 2, WarrantyYears = "5-10 Years" },
+                new WarrantyOfProduct { Id = 3, WarrantyYears = "10-15 Years"  , defaultWarranty=true},
+                new WarrantyOfProduct { Id = 4, WarrantyYears = "15-20 Years" },
+            };
+
+            product.productFeatures = new List<ProductFeatures>
+            {
+                new ProductFeatures { FeatureId = 1, FeatureName = "Design",defaultFeature=true},
+                new ProductFeatures { FeatureId = 2, FeatureName = "Durability" },
+                new ProductFeatures { FeatureId = 3, FeatureName = "Performance",defaultFeature=true },
+                new ProductFeatures { FeatureId = 4, FeatureName = "IsAffordable" },
+            };
+            product.manufacturingBranches = new List<SelectListItem>
+            {
+                new SelectListItem {Text="Kadapa", Value="1", Selected=true},
+                new SelectListItem {Text="HYD", Value="2", Selected=true},
+                new SelectListItem {Text="BLR", Value="3", Selected=true},
+                new SelectListItem {Text="Mumbai", Value="4", Selected=true},
+
+            };
+
+            return View(product);
+        }
+
+        public IActionResult EditorHTMLHelper()
+        {
+            Product product = getBasicProductInfo();
+            product.SelectedBranch = "Kadapa";
+            product.productMemberShipTypes = ProductMemberShipsTypes.Gold;
+            product.ProductCategory = "SmartTV";
+            product.MadeInCountry = "India";
+            product.CreatedDate = Convert.ToDateTime("04-04-2022");
+
+
+            return View(product);
+        }
     }
 }
