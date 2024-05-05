@@ -13,8 +13,13 @@ namespace HTMLHelpersInASP.NETCoreMVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string isRequestFromOtherController,string controllerName)
         {
+            if (isRequestFromOtherController =="Yes")
+            {
+                TempData["RequestType"] = "It is from " + controllerName;
+
+            }
             return View();
         }
 

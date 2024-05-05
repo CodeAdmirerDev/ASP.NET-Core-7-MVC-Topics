@@ -203,5 +203,36 @@ namespace HTMLHelpersInASP.NETCoreMVC.Controllers
 
             return View(product);
         }
+
+        public IActionResult PasswordAndHiddenHTMLHelpers()
+        {
+
+            Product product = getBasicProductInfo();
+
+            product.DealerName = "Vamsi";
+            product.IsDNEnabled = false;
+            return View(product);
+        }
+
+        [HttpPost]
+        public IActionResult DisplayProductInfo(Product product)
+        {
+           
+            return View(product);
+        }
+
+        public IActionResult UsingCustomTagHelpers()
+        {
+            Product product = getBasicProductInfo();
+            product.ProductPhotoPath = "/images/lgmobile.jpeg";
+            product.AltTextIfPhotoNotExist = "This is the LG Mobile photo";
+
+            return View(product);
+        }
+        public IActionResult DifferentWaysToGenerateLinks()
+        {
+            return View();
+        }
+
+        }
     }
-}

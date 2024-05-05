@@ -12,8 +12,11 @@ namespace HTMLHelpersInASP.NETCoreMVC.Models
         public int Rating { get; set; }
         public string ProductCategory { get; set; }
         public string MadeInCountry { get; set; }
-        
-        
+        public string DealerName { get; set; }
+        public bool IsDNEnabled { get; set; }
+
+
+
         public List<WarrantyOfProduct> warrantyOfProducts { get; set; }
         public string WarrantyOfProduct { get; set; }
 
@@ -28,6 +31,9 @@ namespace HTMLHelpersInASP.NETCoreMVC.Models
         public ProductMemberShipsTypes productMemberShipTypes  { get; set; }
 
         public DateTime CreatedDate { get; set; }
+
+        public string ProductPhotoPath { get; set; }
+        public string AltTextIfPhotoNotExist { get; set; }
 
     }
 
