@@ -39,7 +39,7 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
             {
                 return new UnauthorizedResult();
             }
-            return StatusCode(200);
+            return StatusCode(403, "Resource Not Found");
         }
 
         //With Helper method
@@ -58,13 +58,30 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
         {
 
             return new NotFoundResult();
-            //return  NotFound(); -- Helper method
 
         }
+
+
+        public ActionResult GetUserInfoByUserDeptId(string DeptId)
+        {
+            return  NotFound("Resource Not Found");
+
+        }
+
+        /*
         public IActionResult GetUserInfoByUserName(string username)
         {
 
-            //return new OkResult();
+            // Return a 200 OK response
+            return new OkResult();
+            // Or use the shorthand:
+            // return Ok(); 
+        }
+
+        */
+
+        public IActionResult GetUserInfoByUserName(string username)
+        {
 
             var msg = new { Message ="User name is "+ username};
             return Ok(msg);

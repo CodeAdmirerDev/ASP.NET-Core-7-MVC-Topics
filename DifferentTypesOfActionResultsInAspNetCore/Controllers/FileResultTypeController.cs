@@ -106,5 +106,14 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
             return File(pdfContentBytesInformation, "image/jpeg");
         }
 
+        public FileResult DownloadPDFFromPhysicalFile()
+        {
+            //Get the File Path
+            string filePath = Directory.GetCurrentDirectory() + "\\wwwroot\\PDFFiles\\" + "SampleData.pdf";
+
+            //Return the Physical File
+            return PhysicalFile(filePath, "application/pdf");
+        }
+
     }
 }

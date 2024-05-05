@@ -24,4 +24,5 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
             return NoContent(); // Return HTTP 204(No Content) status code and empty response
         }
     }
+
 }

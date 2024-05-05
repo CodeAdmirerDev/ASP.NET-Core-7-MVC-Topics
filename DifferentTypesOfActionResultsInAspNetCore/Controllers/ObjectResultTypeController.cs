@@ -16,24 +16,44 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
 
         }
 
-        [Produces("application/xml")]
-        public IActionResult ProductDetails()
+        public IActionResult CoderDetails()
         {
-            var productInfo = new { ProductId = 124, ProductName = "SmartPhone" };
 
-            //var result= new ObjectResult(productInfo) { 
-
-            //    StatusCode= 400, //HTTP status code for specifying result type
-            //    ContentTypes = new Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection
-            //    {
-            //        "application/xml"  // Content type of the response
-            //    }
-            //};
-
-            //return result;
-            return Ok(productInfo);
+            var person = new { FirstName = "Suri", LastName = "L", Age = 28 };
+            var result = new ObjectResult(person)
+            {
+                StatusCode = 200, // HTTP status code
+                ContentTypes = new Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection
+                {
+                    "application/json" // Content type(s)
+                }
+            };
+            return result;
         }
+
+    public IActionResult GetCoderDetails()
+    {
+        var person = new { FirstName = "Suri", LastName = "L", Age = 28 };
+        // Return a 200 OK response with JSON serialization
+        return Ok(person);
     }
 
+        public IActionResult GetCoderDetailsMultipleReturnTypes()
+        {
+            var person = new { FirstName = "Pranaya", LastName = "Rout", Age = 30 };
+            var result = new ObjectResult(person)
+            {
+                StatusCode = 201, // Created status code
+                ContentTypes = new Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection
+                {
+                    "application/json", // JSON content type
+                    "application/xml" // XML content type
+                }
+            };
+            return result;
+        }
+
+
+    }
 
 }

@@ -59,7 +59,13 @@ namespace DifferentTypesOfActionResultsInAspNetCore.Controllers
         {
             string welcomeMsg = "Hi User, Here we are learning about the ContentResult";
 
-            return Content(welcomeMsg);
+            return Content(welcomeMsg,"text/plain");
+        }
+
+        public ContentResult StringTypeContentResult()
+        {
+            string content = "Hi User, Here we are learning about the ContentResult string type";
+            return Content(content);
         }
 
     }
