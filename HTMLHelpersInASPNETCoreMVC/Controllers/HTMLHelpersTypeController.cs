@@ -234,5 +234,10 @@ namespace HTMLHelpersInASP.NETCoreMVC.Controllers
             return View();
         }
 
+        public IActionResult DisplayCustomLoginForm()
+        {
+            return View();
         }
+
+    }
     }

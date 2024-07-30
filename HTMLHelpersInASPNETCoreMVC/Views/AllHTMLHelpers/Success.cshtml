@@ -1,0 +1,9 @@
+﻿@if (TempData["IsCustomerProfileCreated"] != null)
+{
+    <div>@TempData["IsCustomerProfileCreated"]
+    </div>
+}
+else
+{
+    <div>Something went wrong , please try again. @Html.ActionLink("Go to Customer Profile Creation", "CustomerProfile", "AllHTMLHelpers") </div>
+}

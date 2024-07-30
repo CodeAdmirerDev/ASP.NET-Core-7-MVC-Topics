@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "All link types";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<h1>Html.ActionLink</h1>
+
+@Html.ActionLink("Go to Customer Profile Creation Html ActionLink", "CustomerProfile", "AllHTMLHelpers", new { @id = "customerprofilelinkid", @class = "link-success" })
+
+
+<h1>Action Tag Helper</h1>
+
+<a asp-action="CustomerProfile" asp-controller="AllHTMLHelpers" asp-route-id="1" class="link-success"> Go to Customer Profile Creation Action Tag Helper </a>
+
+<h1>URL Action</h1>
+
+<a href="@Url.Action("CustomerProfile","AllHTMLHelpers")" class="link-danger">Go to Customer Profile Creation URL Action</a>
