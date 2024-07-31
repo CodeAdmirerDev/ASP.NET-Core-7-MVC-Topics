@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "With out Model binding";
+}
+
+@using (Html.BeginForm("WithOutModelBindingForm", "ModelBinding", FormMethod.Post))
+{
+
+    @Html.Label("Movie Title :")
+    @Html.TextBox("MovieTitle", null, new { @class = "form-control" })
+    <br />
+    @Html.Label("Hero Name :")
+    @Html.TextBox("HeroName",null, new { @class = "form-control" })
+    <br />
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+
+
+}
