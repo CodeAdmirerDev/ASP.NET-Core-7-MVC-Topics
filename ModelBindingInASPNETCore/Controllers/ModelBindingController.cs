@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using ModelBindingInASPNETCore.Models;
 
 namespace ModelBindingInASPNETCore.Controllers
@@ -65,17 +66,61 @@ namespace ModelBindingInASPNETCore.Controllers
             return View();
         }
 
-
-        //FromForm
-        [HttpPost]
-        public IActionResult UpdateMovieDetails([FromForm] Movie movie)
+        /**
+                        //FromForm
+        ModelBindingFromFormIndex is Get request, it will load the form 
+        Once user click the submit button it will redirect to UpdateMovieDetails POST method
+        **/
+        public IActionResult ModelBindingFromFormIndex()
         {
-
             return View();
         }
 
-        //FromQuery
-        public JsonResult GetMovieDetailsByName([FromQuery] string movieName)
+        //FromForm using object type
+        [HttpPost]
+        public IActionResult ModelBindingFromFormIndex([FromForm] Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                TempData["SuccessMsg"] = "From Form object method executed successfully!";
+                return RedirectToAction("SuccessView");
+            }
+            return View(movie);
+        }
+
+
+        //FromForm using primitive type and to execute the below method update the  asp-action value with this method name 
+        [HttpPost]
+        public IActionResult ModelBindingFromFormPrimitiveIndex([FromForm] string MovieName, [FromForm] string MovieCollection)
+        {
+            if (MovieName!=null && MovieCollection!=null)
+            {
+
+                TempData["SuccessMsg"] = "From Form primitive method executed successfully!";
+                return RedirectToAction("SuccessView");
+
+            }
+            return Json("Facing issue with Form data");
+        }
+
+        //FromForm using Name property type and to execute the below method update the  asp-action value with this method name 
+        [HttpPost]
+        public IActionResult ModelBindingFromFormNamePropertyIndex([FromForm(Name = "MovieName")] string MovieName, [FromForm(Name = "MovieCollection")] string MovieCollection, [FromForm] IFormFile movieImage)
+        {
+            if (MovieName != null && MovieCollection != null)
+            {
+
+                TempData["SuccessMsg"] = "From Form Name Property method executed successfully!";
+                return RedirectToAction("SuccessView");
+
+            }
+            return Json("Facing issue with Form data");
+
+        }
+
+
+            //FromQuery
+            public JsonResult GetMovieDetailsByName([FromQuery] string movieName)
         {
             if (movieName != null)
             {
@@ -103,6 +148,12 @@ namespace ModelBindingInASPNETCore.Controllers
 
         }
 
+
+        //SuccessView
+        public IActionResult SuccessView()
+        {
+            return View();
+        }
 
     }
 }

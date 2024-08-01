@@ -1,0 +1,30 @@
+﻿@model ModelBindingInASPNETCore.Models.Movie;
+
+@{
+    ViewData["Title"] = "Using Model binding";
+}
+
+<form method="post" asp-controller="ModelBinding" asp-action="ModelBindingFromFormIndex" enctype="multipart/form-data">
+
+    <label>Movie Title :</label>
+    <input type="text" asp-for="MovieName" /> @* //In Tag helper *@
+    @* @Html.TextBoxFor(m=> m.MovieName) *@ @* //In HTML helper *@
+    @Html.ValidationMessageFor(model => model.MovieName, "", new { @class = "text-danger" })
+
+    <br />
+    <label>Hero Name :</label>
+    <input type="text" asp-for="HeroName" />
+    <br />
+
+    <label>Movie Collection :</label>
+    <input type="text" asp-for="MovieCollection" />
+    <br />
+
+    <label>Movie Image :</label>
+    <input type="file" name="movieImage" />
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+
+
+</form>
