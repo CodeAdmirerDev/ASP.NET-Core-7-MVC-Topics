@@ -33,7 +33,7 @@ namespace ModelBindingInASPNETCore.Controllers
         {
             return View();
         }
-
+        [HttpPost]
         public JsonResult WithModelBindingForm(Movie movieDetails)
         {
             if (movieDetails != null)
