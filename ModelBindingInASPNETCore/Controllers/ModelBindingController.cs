@@ -6,6 +6,21 @@ namespace ModelBindingInASPNETCore.Controllers
 {
     public class ModelBindingController : Controller
     {
+        List<Movie> _movies;
+
+        public ModelBindingController() {
+
+            _movies = new List<Movie>() { 
+            
+                new Movie(){HeroName="NTR",MovieName="Devara",MovieCollection=100000},
+                new Movie(){HeroName="NTR",MovieName="NKPM",MovieCollection=50000},
+
+                new Movie(){HeroName="Nani",MovieName="MCA",MovieCollection=50000},
+
+                new Movie(){HeroName="Chiru",MovieName="K150",MovieCollection=200000},
+            };
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -119,19 +134,84 @@ namespace ModelBindingInASPNETCore.Controllers
         }
 
 
-            //FromQuery
-            public JsonResult GetMovieDetailsByName([FromQuery] string movieName)
+        //FromQuery
+        
+        //FromQuery using object type
+        public IActionResult SearchMovieInfo([FromQuery] UserSearchCriteria searchCriteria)
         {
-            if (movieName != null)
-            {
-                return Json("Movie details are : kalki");
+            List<Movie> filteredMovie = new List<Movie>();
 
-            }
-            else
+            if (searchCriteria != null)
             {
-                return Json("Movie data is not found!");
+
+                if(!string.IsNullOrEmpty(searchCriteria.MovieName)  && !string.IsNullOrEmpty(searchCriteria.HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(searchCriteria.MovieName.ToUpper()) && m.HeroName.ToUpper().Equals(searchCriteria.HeroName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(searchCriteria.MovieName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(searchCriteria.MovieName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(searchCriteria.HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.HeroName.ToUpper().Equals(searchCriteria.HeroName.ToUpper())).ToList();
+                }
             }
+
+            return Ok(filteredMovie);
         }
+        //FromForm using primitive type 
+        // Eg: https://localhost:7086/ModelBinding/SearchMovieInfoByPrimitiveType?HeroName=NTR&MovieName=Devara
+        public IActionResult SearchMovieInfoByPrimitiveType([FromQuery] string HeroName, [FromQuery] string MovieName)
+        {
+            List<Movie> filteredMovie = new List<Movie>();
+
+            if (ModelState.IsValid)
+            {
+
+                if (!string.IsNullOrEmpty(MovieName) && !string.IsNullOrEmpty(HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(MovieName.ToUpper()) && m.HeroName.ToUpper().Equals(HeroName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(MovieName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(MovieName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.HeroName.ToUpper().Equals(HeroName.ToUpper())).ToList();
+                }
+            }
+
+            return Ok(filteredMovie);
+        }
+
+        //FromForm using Name property type 
+        // Eg: https://localhost:7086/ModelBinding/SearchMovieInfoByNamePropertyType?Hval=NTR&Mval=Devara
+        public IActionResult SearchMovieInfoByNamePropertyType([FromQuery(Name ="Hval")] string HeroName, [FromQuery(Name ="Mval")] string MovieName)
+        {
+            List<Movie> filteredMovie = new List<Movie>();
+
+            if (ModelState.IsValid)
+            {
+
+                if (!string.IsNullOrEmpty(MovieName) && !string.IsNullOrEmpty(HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(MovieName.ToUpper()) && m.HeroName.ToUpper().Equals(HeroName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(MovieName))
+                {
+                    filteredMovie = _movies.Where(m => m.MovieName.ToUpper().Equals(MovieName.ToUpper())).ToList();
+                }
+                else if (!string.IsNullOrEmpty(HeroName))
+                {
+                    filteredMovie = _movies.Where(m => m.HeroName.ToUpper().Equals(HeroName.ToUpper())).ToList();
+                }
+            }
+
+            return Ok(filteredMovie);
+        }
+
 
         //FromRoute
         [HttpGet("{heroName}")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModelBindingInASPNETCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d97ee699a186816f4c48dd8969ef486666d4009")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f11fd320089037a0e838e76fb025ac39a8c9dda")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModelBindingInASPNETCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModelBindingInASPNETCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
