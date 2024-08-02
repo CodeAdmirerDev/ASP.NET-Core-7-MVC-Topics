@@ -74,13 +74,7 @@ namespace ModelBindingInASPNETCore.Controllers
         }
 
 
-        //FromBody
-        [HttpPost]
-        public IActionResult CreateMovieDetails([FromBody] Movie movie) {
-
-            return View();
-        }
-
+       
         /**
         //FromForm start
         
@@ -263,10 +257,37 @@ namespace ModelBindingInASPNETCore.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetLocalizedContnet([FromHeader(Name = "Accept-Language")] string language)
+        public IActionResult GetLocalizedContent([FromHeader(Name = "Accept-Language")] string language)
         {
             return View();
         }
+
+        // End of FromHeader
+
+
+
+        //FromBody
+        // Call this method using any tool like Postman
+        /**
+          
+        Method type : Post
+        URL : https://localhost:7086/ModelBinding/CreateMovieDetails
+        Request body as Json : 
+
+        {
+         "MovieName" :"Devara",
+         "HeroName" :"NTR",
+         "MovieCollection" :"522"
+        }
+         * */
+        [HttpPost]
+        public IActionResult CreateMovieDetails([FromBody] Movie movie)
+        {
+
+            return View();
+        }
+
+        // End of FromBody
 
         //SuccessView
         public IActionResult SuccessView()
