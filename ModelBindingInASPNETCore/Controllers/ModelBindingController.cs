@@ -255,11 +255,17 @@ namespace ModelBindingInASPNETCore.Controllers
         
         // End of FromRoute
 
-        //FromHeader
+        //FromHeader start
         public IActionResult VerifyUser([FromHeader(Name ="User-Agent")] string userAgent)
         {
             return View();
 
+        }
+
+        [HttpGet]
+        public IActionResult GetLocalizedContnet([FromHeader(Name = "Accept-Language")] string language)
+        {
+            return View();
         }
 
         //SuccessView
