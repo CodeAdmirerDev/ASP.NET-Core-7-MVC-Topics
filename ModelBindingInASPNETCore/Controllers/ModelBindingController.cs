@@ -214,12 +214,39 @@ namespace ModelBindingInASPNETCore.Controllers
 
 
         //FromRoute
-        [HttpGet("{heroName}")]
-        public IActionResult GetMoveByHeroName([FromRoute] string heroName)
+
+        // Eg: https://localhost:7086/MovieDetails/Devara/getdetails
+        [HttpGet]
+        [Route("MovieDetails/{moviename}/getdetails")]
+        public IActionResult GetMoveByMovieName([FromRoute] string moviename)
         {
-            return View();
+            var moveDetails = _movies.FirstOrDefault(m=> m.MovieName.ToUpper().Equals(moviename.ToUpper()));
+
+            if (moveDetails==null) {
+
+                return NotFound();
+            }
+            return Ok(moveDetails);
 
         }
+
+        //FromRoute using Name property type
+        //Eg https://localhost:7086/HeroDetails/NTR/getdetails
+        [HttpGet]
+        [Route("HeroDetails/{hName}/{mName}/getdetails")]
+        public IActionResult GetMoveByHeroName([FromRoute(Name = "hName")] string heroname, [FromRoute(Name = "mName")]  string moviename)
+        {
+            var moveDetails = _movies.FirstOrDefault(m => m.HeroName.ToUpper().Equals(heroname.ToUpper()));
+
+            if (moveDetails == null)
+            {
+
+                return NotFound();
+            }
+            return Ok(moveDetails);
+
+        }
+
 
         //FromHeader
         public IActionResult VerifyUser([FromHeader(Name ="User-Agent")] string userAgent)
