@@ -82,7 +82,8 @@ namespace ModelBindingInASPNETCore.Controllers
         }
 
         /**
-                        //FromForm
+        //FromForm start
+        
         ModelBindingFromFormIndex is Get request, it will load the form 
         Once user click the submit button it will redirect to UpdateMovieDetails POST method
         **/
@@ -133,9 +134,12 @@ namespace ModelBindingInASPNETCore.Controllers
 
         }
 
+        // End of FromForm
 
-        //FromQuery
-        
+
+
+        //FromQuery start
+
         //FromQuery using object type
         public IActionResult SearchMovieInfo([FromQuery] UserSearchCriteria searchCriteria)
         {
@@ -186,7 +190,7 @@ namespace ModelBindingInASPNETCore.Controllers
             return Ok(filteredMovie);
         }
 
-        //FromForm using Name property type 
+        //FromQuery using Name property type 
         // Eg: https://localhost:7086/ModelBinding/SearchMovieInfoByNamePropertyType?Hval=NTR&Mval=Devara
         public IActionResult SearchMovieInfoByNamePropertyType([FromQuery(Name ="Hval")] string HeroName, [FromQuery(Name ="Mval")] string MovieName)
         {
@@ -211,9 +215,11 @@ namespace ModelBindingInASPNETCore.Controllers
 
             return Ok(filteredMovie);
         }
+        
+        // End of FromQuery
 
 
-        //FromRoute
+        //FromRoute start
 
         // Eg: https://localhost:7086/MovieDetails/Devara/getdetails
         [HttpGet]
@@ -246,7 +252,8 @@ namespace ModelBindingInASPNETCore.Controllers
             return Ok(moveDetails);
 
         }
-
+        
+        // End of FromRoute
 
         //FromHeader
         public IActionResult VerifyUser([FromHeader(Name ="User-Agent")] string userAgent)
@@ -254,7 +261,6 @@ namespace ModelBindingInASPNETCore.Controllers
             return View();
 
         }
-
 
         //SuccessView
         public IActionResult SuccessView()
