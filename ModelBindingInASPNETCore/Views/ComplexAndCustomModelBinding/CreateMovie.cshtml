@@ -1,0 +1,129 @@
+﻿@model MovieDetails
+@{
+    ViewBag.Title="Movie Create";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<div>
+
+    <form asp-controller="moviedetails" asp-action="create" method="post" class="mt-3">
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="MovieName" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="MovieName" class="form-control" placeholder="Enter movie name" />
+                @* @Html.ValidationMessageFor(movie => movie.MovieName, "", new { @class = "text-danger" }) *@
+                <span asp-validation-for="MovieName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="HeroName" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="HeroName" class="form-control" placeholder="Enter hero name" />
+            </div>
+        </div>
+
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="MovieCollection" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="MovieCollection" class="form-control" placeholder="Enter Movie collection" />
+            </div>
+        </div>
+
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="Directors" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <select asp-for="Directors" class="custom-select mr-sm-2"
+                    asp-items="Html.GetEnumSelectList<Directors>()">
+                </select>
+                @* From ViewBag *@
+                @* <select asp-for="Directors" asp-items="ViewBag.DirectorsList"></select> *@
+            </div>
+        </div>
+
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="IsMovieHit" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input type="checkbox" asp-for="IsMovieHit" class="form-control-input" />
+            </div>
+        </div>
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="ReleaseDate" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input type="date" asp-for="ReleaseDate" class="form-control" />
+            </div>
+        </div>
+
+        <div style="margin-top:10px" class="form-group row">
+            <div class="col-sm-10">
+                <label class="col-sm-2 col-form-label">
+                    Please select movie type
+                </label>
+
+                @foreach (var movieType in (List<SelectListItem>)ViewBag.MovieTypeList)
+                {
+                    <label class="radio-inline">
+
+                        <input type="radio" value="@movieType.Value" id="MovieType@(movieType.Text)" asp-for="MovieType" />
+                        @movieType.Text <br />
+                    </label>
+                }
+            </div>
+        </div>
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="Cast" class="col-sm-2 col-form-label"></label>
+
+            <div class="col-sm-10">
+
+                <style>
+                    .form-check{
+                        display:inline-block;
+                        margin-right:25px;
+                    }
+                </style>
+                <div class="Cast-List" style="display:flex; flex-wrap:wrap;">
+                @{
+                    int counter = 0;
+
+                foreach (var castvalue in ViewBag.CastList)
+                {
+                            <label class="form-check-label" for="@("castvalue"+ ++counter)"> @castvalue </label>
+
+                            <span>&nbsp;</span>
+                            <input type="checkbox" class="form-check-input" name="Cast" value="@castvalue" id="@("castvalue"+ ++counter)" /> <span>&nbsp;&nbsp;&nbsp;</span>
+                }
+                }
+                </div>
+
+            </div>
+        </div>
+
+        <div style="margin-top:10px" class="form-group row">
+            <label asp-for="MovieStory" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <textarea asp-for="MovieStory" class="form-control" placeholder="Please write movie story"></textarea>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+
+            <div class="col-sm-12" style="text-align:center">
+                <button type="submit" class="btn btn-primary" >Create Movie </button>
+            <button type="reset" class="btn btn-primary">Clear </button>
+
+            </div>
+
+
+
+
+    </form>
+
+</div>
