@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace HTMLHelpersInASPNETCoreMVC.Models
+namespace HTMLHelpersInASPNETCoreMVC.Helpers
 {
     public static class CustomHTMLHelper
     {
@@ -16,7 +16,7 @@ namespace HTMLHelpersInASPNETCoreMVC.Models
                 imgTag.MergeAttribute("alt", alt);
             }
 
-            if(Convert.ToInt32(height) > 0)
+            if (Convert.ToInt32(height) > 0)
             {
                 imgTag.MergeAttribute("height", height);
             }

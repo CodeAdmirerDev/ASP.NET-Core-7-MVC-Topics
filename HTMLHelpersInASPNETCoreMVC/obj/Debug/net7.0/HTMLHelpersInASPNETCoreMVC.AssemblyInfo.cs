@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HTMLHelpersInASPNETCoreMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+357b53c2e80a0354380f36768ad2267455bcbe03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30e8bad0284986267a4c4dcfb43d8ece1ff97935")]
 [assembly: System.Reflection.AssemblyProductAttribute("HTMLHelpersInASPNETCoreMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HTMLHelpersInASPNETCoreMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

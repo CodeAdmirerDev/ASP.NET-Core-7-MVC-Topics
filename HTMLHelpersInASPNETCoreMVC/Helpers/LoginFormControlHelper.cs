@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace HTMLHelpersInASPNETCoreMVC.Models
+namespace HTMLHelpersInASPNETCoreMVC.Helpers
 {
     public static class LoginFormControlHelper
     {
