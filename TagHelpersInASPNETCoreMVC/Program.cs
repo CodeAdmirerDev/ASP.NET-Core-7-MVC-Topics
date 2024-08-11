@@ -28,7 +28,7 @@ namespace TagHelpersInASPNETCoreMVC
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "codeadmirer/{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }
