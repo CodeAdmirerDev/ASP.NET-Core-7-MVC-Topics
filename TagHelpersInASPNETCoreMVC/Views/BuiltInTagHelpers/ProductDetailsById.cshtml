@@ -1,0 +1,25 @@
+﻿@model TagHelpersInASPNETCoreMVC.Models.Product;
+@{
+    ViewBag.Title = "Product Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Model?.ProductName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <h4>Product ID : @Model?.ProductId</h4>
+                <h4>Category : @Model?.Category</h4>
+                <h4>Description : @Model?.Description</h4>
+                <h4>InStock : @Model?.InStock</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

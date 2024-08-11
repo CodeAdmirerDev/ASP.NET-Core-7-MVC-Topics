@@ -1,0 +1,27 @@
+﻿@model List<TagHelpersInASPNETCoreMVC.Models.Product>
+@{
+    ViewBag.Title = "Product List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>More Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.ProductId </td>
+                    <td>@product.ProductName </td>
+                    <td><a href="/BuiltInTagHelpers/ProductDetailsById?productid=@product.ProductId" class="btn btn-primary">View</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
