@@ -26,9 +26,19 @@ namespace TagHelpersInASPNETCoreMVC
 
             app.UseAuthorization();
 
+            /* So, with the below change, manually generating the link will not work if you run the application, 
+            whereas the link generating with Tag Helpers will work as expected.
+            */
             app.MapControllerRoute(
                 name: "default",
                 pattern: "codeadmirer/{controller=Home}/{action=Index}/{id?}");
+
+            /*
+            // If you want to execute the all method , uncomment this code
+             app.MapControllerRoute(
+                name: "default",
+                pattern: "codeadmirer/{controller=Home}/{action=Index}/{id?}");
+            */
 
             app.Run();
         }
