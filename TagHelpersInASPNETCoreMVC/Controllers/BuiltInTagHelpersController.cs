@@ -19,6 +19,7 @@ namespace TagHelpersInASPNETCoreMVC.Controllers
         }
         public IActionResult Index()
         {
+            TempData["BaseURL"] = "/BuiltInTagHelpers/Index";
             return View(products);
         }
 
@@ -27,6 +28,19 @@ namespace TagHelpersInASPNETCoreMVC.Controllers
             var productDetails = products.FirstOrDefault(prd => prd.ProductId == productid);
 
             return View(productDetails);
+        }
+
+        public IActionResult UsingHtmlHelpers()
+        {
+
+            TempData["BaseURL"] = "/BuiltInTagHelpers/UsingHtmlHelpers";
+            return View(products);
+        }
+
+        public IActionResult UsingTagHelpers()
+        {
+            TempData["BaseURL"] = "/BuiltInTagHelpers/UsingTagHelpers";
+            return View(products);
         }
     }
 }
