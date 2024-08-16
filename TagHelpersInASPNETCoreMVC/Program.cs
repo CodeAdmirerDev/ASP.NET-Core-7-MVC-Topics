@@ -20,12 +20,16 @@ namespace TagHelpersInASPNETCoreMVC
             }
 
             app.UseHttpsRedirection();
+
+            //Adding Static Files Middleware to Serve the Static Files
+            //This Should be added before the MVC Middleware
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
+            //Adding MVC Middleware to the Request processing Pipeline
             app.MapControllerRoute(
                 name: "default",
                 pattern: "codeadmirer/{controller=Home}/{action=Index}/{id?}");
