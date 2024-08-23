@@ -12,6 +12,23 @@
         <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     </environment>
     <environment exclude="Development">
+        
+        @* Uncomment below code If you want make CDN failing to check the fallback is working or not.
+        Some info : 
+        Let’s intentionally change the CDN’s integrity value to ensure that if the CDN fails, it loads the minified bootstrap.css file from our local server. 
+        To do this, add some random value to the end of the integrity attribute of the CDN link. 
+        For eg add ChinTapakDumDum at the end of the integrity property value of the link attribute as shown like below.​ *@
+
+        @* <link rel="stylesheet"
+              integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVMChinTapakDumDum"
+              crossorigin="anonymous"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" /> *@
+
         <link rel="stylesheet"
               integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
               crossorigin="anonymous"
