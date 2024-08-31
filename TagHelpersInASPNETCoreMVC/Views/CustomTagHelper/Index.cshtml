@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Custom Tag Helper Page";
+}
+
+@*  Uses the custom tag helper "custom-button" to create a button.
+    This custom tag helper must be defined in your project as per the previous code example. 
+*@
+
+<custom-button text="Submit" button-type="submit" button-class="btn-success"></custom-button>
+
+@* This line creates a button with the text "Submit".
+   It sets the button type to "submit", which means it's intended to submit a form.
+   It applies a Bootstrap class "btn-success" to style the button with a green color. 
+*@
+
+@*  Another usage of the "custom-button" tag helper to create a different button. *@
+
+<custom-button text="Cancel" button-class="btn-danger"></custom-button>
+
+@*  This line creates a button with the text "Cancel".
+    Since no "button-type" attribute is specified, it defaults to "button" as defined in the Tag Helper.
+    The button is styled with the Bootstrap class "btn-danger", giving it a red color. *@
+@* 
+
+The above buttons will appear in the web page like below :
+
+<button type="submit" class="btn btn-success">Submit</button>
+<button type="button" class="btn btn-danger">Cancel</button> 
+
+*@
