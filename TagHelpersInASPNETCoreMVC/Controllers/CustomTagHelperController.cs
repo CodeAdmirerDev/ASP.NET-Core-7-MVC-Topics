@@ -8,5 +8,10 @@ namespace TagHelpersInASPNETCoreMVC.Controllers
         {
             return View();
         }
+
+        public IActionResult RecentPostsInfo()
+        {
+            return View();
+        }
     }
 }
