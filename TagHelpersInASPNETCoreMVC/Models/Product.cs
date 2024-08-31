@@ -8,5 +8,6 @@
         public required string Description { get; set; }
         public string? Category { get; set; }
         public bool InStock { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

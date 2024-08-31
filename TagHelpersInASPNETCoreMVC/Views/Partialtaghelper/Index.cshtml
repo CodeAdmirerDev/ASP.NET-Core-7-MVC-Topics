@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Product Store";
+    Layout = "~/Views/Shared/_PartialTagHelperLayout.cshtml";
+}
+
+<h2>Welcome to Our Product Store</h2>
+<p>Find the best products at great prices.</p>
+
+<!-- Render Product List -->
+<partial name="_ProductListPartial" model="@Model" />
