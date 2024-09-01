@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var expiryDate = new DateTime(2024, 9, 2);
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Cached Content Section (Default Caching)</h5>
+                    <cache> 
+                    @* <cache enabled="true"> *@
+                    @* <cache expires-after="@TimeSpan.FromMinutes(5)">​ *@
+                    @* ​<cache expires-sliding="@TimeSpan.FromSeconds(120)"> *@
+                    @* <cache expires-on="@expiryDate"> *@
+                    @* <cache expires-after="@TimeSpan.FromMinutes(5)" vary-by-header="User-Agent"> *@
+                    @* <cache expires-after="@TimeSpan.FromMinutes(5)" vary-by-query="category"> ​ *@
+                    @* <cache cache-profile="ShortLivedCache"> *@
+                        <p>This section uses default caching settings, which caches content for 20 minutes by default. If no specific attributes like `expires-after`, `expires-sliding`, or `expires-on` are provided, the Cache Tag Helper will use the default expiration time.</p>
+                        <p><strong>Current Time (Inside Cache Block):</strong> @DateTime.Now</p>
+                    </cache>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Non-Cached Content Section</h5>
+                    <p>This section always displays the most current content and is not affected by caching. The time displayed here will update every time the page is refreshed.</p>
+                    <p><strong>Current Time (Outside Cache Block):</strong> @DateTime.Now</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

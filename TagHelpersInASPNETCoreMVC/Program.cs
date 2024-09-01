@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using TagHelpersInASPNETCoreMVC.Models.Services;
 
 namespace TagHelpersInASPNETCoreMVC
@@ -8,8 +9,18 @@ namespace TagHelpersInASPNETCoreMVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+           // builder.Services.AddControllersWithViews();
+           //Added for cache 
+            builder.Services.AddControllersWithViews(options =>
+            {
+                options.CacheProfiles.Add("ShortLivedCache", new CacheProfile()
+                {
+                    Duration = 60 // 1 minute
+                });
+            });
+
             builder.Services.AddSingleton<ProductService>();
             builder.Services.AddSingleton<CartService>();
 
