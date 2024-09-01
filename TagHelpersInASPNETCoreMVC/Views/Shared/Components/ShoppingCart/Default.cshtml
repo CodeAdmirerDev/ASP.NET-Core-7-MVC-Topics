@@ -1,0 +1,56 @@
+﻿@model List<TagHelpersInASPNETCoreMVC.Models.ViewComponents.CartItem>
+
+@{
+    // Calculate the total amount
+    double totalAmount = Model.Sum(item => item.Quantity * item.Product.Price);
+}
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning text-center" role="alert">
+        <h4 class="alert-heading">Your Cart is Empty!</h4>
+        <p>It seems like you haven't added any items to your cart yet.</p>
+        <hr>
+        <a href="@Url.Action("Index", "ViewComponentExample")" class="btn btn-primary">Continue Shopping</a>
+    </div>
+}
+else
+{
+    <div class="card shadow-lg mb-4">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Shopping Cart</h5>
+            <span class="badge bg-light text-dark fs-4">Total Items: @Model.Count</span>
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var item in Model)
+            {
+                <li class="list-group-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="@item.Product.ImageUrl" alt="@item.Product.ProductName" class="img-fluid rounded border" style="width: 150px; height: 100px; object-fit: cover;">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="mb-1">@item.Product.ProductName</h6>
+                            <p class="text-muted small mb-1">@item.Product.Description</p>
+                            <p class="mb-0 text-muted">Quantity: @item.Quantity</p>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <span class="badge bg-success fs-6 p-2">$@item.Quantity * @item.Product.Price</span>
+                            <br />
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-2">Remove</a>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+            <div>
+                <strong>Total Amount: </strong><span class="text-success fs-5">$@totalAmount</span>
+            </div>
+            <div>
+                <a href="@Url.Action("Index", "ViewComponentExample")" class="btn btn-secondary btn-lg">Continue Shopping</a>
+                <a href="#" class="btn btn-primary btn-lg">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+}

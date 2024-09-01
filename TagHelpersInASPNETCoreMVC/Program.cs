@@ -1,3 +1,5 @@
+using TagHelpersInASPNETCoreMVC.Models.Services;
+
 namespace TagHelpersInASPNETCoreMVC
 {
     public class Program
@@ -8,6 +10,8 @@ namespace TagHelpersInASPNETCoreMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSingleton<ProductService>();
+            builder.Services.AddSingleton<CartService>();
 
             var app = builder.Build();
 

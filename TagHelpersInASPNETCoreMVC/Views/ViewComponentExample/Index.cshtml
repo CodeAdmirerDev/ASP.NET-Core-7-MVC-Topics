@@ -1,0 +1,29 @@
+﻿@model List<TagHelpersInASPNETCoreMVC.Models.ViewComponents.Product>
+@{
+    ViewData["Title"] = "Products page";
+}
+
+<h2 class="mb-4">Products</h2>
+
+<div class="text-left">
+    <a asp-action="Cart" asp-controller="ViewComponentExample" style="text-align:left;" class="btn btn-success btn-block">Goto Cart</a>
+</div>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img class="card-img-top" src="@product.ImageUrl " alt="@product.ProductName">
+                <div class="card-body">
+                    <h5 class="card-title text-center">@product.ProductName</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text text-primary"><strong>Price: $@product.Price</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="AddToCart" asp-controller="ViewComponentExample" asp-route-id="@product.ProductId" class="btn btn-success btn-block">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
