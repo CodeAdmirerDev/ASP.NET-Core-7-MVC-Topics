@@ -25,6 +25,8 @@ namespace ModelBindingInASPNETCore.Models
     {
         [Required(ErrorMessage = "Movie Name is required")]
         public string MovieName { get; set; }
+
+        [Required(ErrorMessage = "Hero Name is required")]
         public string? HeroName { get; set; }
         public double? MovieCollection { get; set; }
     }
@@ -35,6 +37,7 @@ namespace ModelBindingInASPNETCore.Models
 
         [Required(ErrorMessage="Movie Name is required")]
         public string MovieName { get; set; }
+        [Required(ErrorMessage = "Hero Name is required")]
         public string? HeroName { get; set; }
         public double? MovieCollection { get; set; }
         public Directors? Directors { get; set; }
