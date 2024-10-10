@@ -1,0 +1,18 @@
+﻿@model DataAnnotationsInASPNETCore.Models.JobDetail
+
+<div class="form-group row">
+    <label asp-for="JobTitleName" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+        <input asp-for="JobTitleName" class="form-control" placeholder="Enter JobTitle Name" />
+        <span asp-validation-for="JobTitleName" class="text-danger"></span>
+    </div>
+</div>
+
+
+<div class="form-group row">
+    <label asp-for="Salary" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+        <input asp-for="Salary" class="form-control" placeholder="Enter Salary" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+</div>

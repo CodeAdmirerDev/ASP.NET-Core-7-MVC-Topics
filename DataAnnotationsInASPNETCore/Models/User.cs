@@ -13,11 +13,13 @@ namespace DataAnnotationsInASPNETCore.Models
 
 
         [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
 
         [Required]
         [Compare("Password")]
+        [DataType(DataType.Password)]
         public string CNPassword { get; set; }
 
         [Required]

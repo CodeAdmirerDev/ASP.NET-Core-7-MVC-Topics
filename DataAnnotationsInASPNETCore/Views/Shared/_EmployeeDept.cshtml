@@ -1,0 +1,9 @@
+﻿@model DataAnnotationsInASPNETCore.Models.Department
+
+<div class="form-group row">
+    <label asp-for="DepartmentName" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+        <input asp-for="DepartmentName" class="form-control" placeholder="Enter Department Name" />
+        <span asp-validation-for="DepartmentName" class="text-danger"></span>
+    </div>
+</div>
