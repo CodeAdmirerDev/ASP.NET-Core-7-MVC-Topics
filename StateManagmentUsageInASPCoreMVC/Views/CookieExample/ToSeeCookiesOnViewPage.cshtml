@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    bool isUserNameCookieExist = HttpContextAccessor.HttpContext.Request.Cookies.ContainsKey("UserName");
+    bool isUserIdCookieExist = HttpContextAccessor.HttpContext.Request.Cookies.ContainsKey("UserId");
+}
+
+
+<h1>Using the Cookies in ASP.NET Core MVC</h1>
+
+<div>
+
+    @if (isUserNameCookieExist && isUserIdCookieExist)
+    {
+        <label>User Id</label> <b> @HttpContextAccessor?.HttpContext?.Request.Cookies["UserId"]  </b> <br />
+        <label>User Name</label> <b> @HttpContextAccessor?.HttpContext?.Request.Cookies["UserName"]  </b>
+
+    }
+    else{
+        <h4>Cookies info is not available ! </h4>
+        <p>If you want to generate the cookies  please @Html.ActionLink("Click Here", "Index", "CookieExample")  </p>
+    }
+
+   
+</div>
+
+<p>If you want to delete the cookies information please @Html.ActionLink("Click Here", "DeleteCookiesInfo", "CookieExample")  </p>
+

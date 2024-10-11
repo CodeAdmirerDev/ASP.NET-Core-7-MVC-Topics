@@ -1,0 +1,13 @@
+﻿@{
+    bool isCookiesDeleted = ViewBag.IsCookieInfoDeleted;
+}
+
+
+
+@if (isCookiesDeleted)
+{
+    <h4>Cookies are delete sucessfully! </h4>
+    <p>If you want to generate the cookies  please @Html.ActionLink("Click Here", "Index", "CookieExample")  </p>
+}else{
+    <h4>Cookies are delete are not deleted , please try again! </h4>
+}

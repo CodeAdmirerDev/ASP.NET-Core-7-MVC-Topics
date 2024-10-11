@@ -7,6 +7,7 @@ namespace StateManagementUsageInASPCoreMVC.Controllers
        const string CookieUserId = "UserId";
        const string CookieUserName = "UserName";
 
+        // 1 -- Sending the cookies info from server to client broswer
         public IActionResult Index()
         {
             CookieOptions options = new CookieOptions()
@@ -26,11 +27,69 @@ namespace StateManagementUsageInASPCoreMVC.Controllers
             };
 
             //Here we are appending the cookie for UserId and UserName
-            Response.Cookies.Append(CookieUserId, "EMP123456",options);
+            Response.Cookies.Append(CookieUserId, "12345",options);
             Response.Cookies.Append(CookieUserName, "DemoUser", options);
 
 
             return View();
         }
+
+        // 2 -- Accessing the cookies info in view page
+        public IActionResult ToSeeCookiesOnViewPage()
+        {
+
+            return View();
+        }
+
+        // 3 -- Reading the cookies info in the another method 
+        public IActionResult AccessCookiesInAnotherMethod()
+        {
+
+            string? UsernameVal = Request.Cookies.ContainsKey(CookieUserName) ? Request.Cookies[CookieUserName] : null;
+
+            int UserIdVal = 0;
+
+            if (Request.Cookies.ContainsKey(CookieUserId)) {
+
+               bool isValidUserId = int.TryParse(Request.Cookies[CookieUserId],out int parsedUserId);
+
+                if (isValidUserId)
+                {
+                    UserIdVal = parsedUserId;
+                }
+            }
+
+            TempData["TempUserId"]=UserIdVal;
+            TempData["TempUserName"] = UsernameVal;
+
+            return View();
+        }
+
+        // 4 -- Deleting the cookies info based on user request
+
+        public IActionResult DeleteCookiesInfo()
+        {
+            try
+            {
+            CookieOptions cookieOptions = new CookieOptions()
+            {
+                Domain= "localhost",
+                Path="/"
+            };
+
+            //Delete the cookies info from the broswer
+            Response.Cookies.Delete(CookieUserName, cookieOptions);
+            Response.Cookies.Delete(CookieUserId, cookieOptions);
+
+            ViewBag.IsCookieInfoDeleted = true;
+
+                }
+            catch
+            {
+                ViewBag.IsCookieInfoDeleted = false;
+            }
+            return View();
+        }
+
     }
 }
