@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+    
+@if (ViewBag.IsSucess)
+{
+    <h4>Encrypted cookies are sucessfully stored in the broswer level.</h4>
+    <p>If you want to see the cookies information please @Html.ActionLink("Click Here", "DecryptedIndex", "EncryptionDecryptionCookieValue")  </p>
+    
+}else{
+    <h4> @ViewBag.AnyError </h4>
+}

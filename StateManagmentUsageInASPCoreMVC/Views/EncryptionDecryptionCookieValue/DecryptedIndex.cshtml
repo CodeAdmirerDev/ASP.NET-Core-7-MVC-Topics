@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@if (ViewBag.IsSucess)
+{
+    <h4>Decrypted cookie values are sucessfully, Please find the cookies value from the below:</h4>
+    <label>User Id :</label> <span> @ViewBag.UserIdValue </span> <br />
+    <label>User Name :</label> <span> @ViewBag.UserNameValue </span>
+
+    <p>If you want to delete the cookies information please @Html.ActionLink("Click Here", "DeleteCookiesInfo", "EncryptionDecryptionCookieValue")  </p>
+
+
+}
+else
+{
+    <h4> @ViewBag.AnyError </h4>
+}

@@ -1,8 +1,33 @@
+using Microsoft.AspNetCore.DataProtection;
+using StateManagementUsageInASPCoreMVC.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<ICustomCookieService, CustomCookieService>();
+
+// ConfigureApplicationCookie is an extension method given by ASP.NET Core to configure
+//the properites of the cookie used for application 
+//builder.Services.ConfigureApplicationCookie(options =>
+//{
+
+//    options.Cookie.Domain = "localhost"; //Here we need to set the domain for the cookie
+
+//    options.Cookie.Path = "/";//It will available within the entire application
+
+//    options.Cookie.MaxAge = TimeSpan.FromDays(2);//It will expire in 2 day
+
+//    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;//These will ensure cookies will be sent over only in HTTPS(true)
+
+//    options.Cookie.HttpOnly = false;//It will prevent the client-side scripts(XSS attacks) from accessing the cookie
+
+//    options.Cookie.IsEssential = true;//It will represent the cookie is required to funcation in the application
+//    options.SlidingExpiration = true;   // Automatically renew the cookie if it's accessed within the expiration time
+
+//});
+
 //We need to add the IHttpContextAccessor service to the dependency injection IOC containers
 
 var app = builder.Build();
@@ -19,7 +44,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+//app.UseCookiePolicy();
 app.UseAuthorization();
 
 app.MapControllerRoute(
