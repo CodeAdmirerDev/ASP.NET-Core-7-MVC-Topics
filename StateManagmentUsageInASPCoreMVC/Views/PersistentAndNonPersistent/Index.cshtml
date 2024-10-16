@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    bool isPersistentUserIdExist = HttpContextAccessor.HttpContext.Request.Cookies.ContainsKey("PersistentUserId");
+    bool isNonPersistentUserIdExist = HttpContextAccessor.HttpContext.Request.Cookies.ContainsKey("NonPersistentUserId");
+}
+
+<h1>Using the Persistent & Non-Persistent Cookies in ASP.NET Core MVC</h1>
+
+<div>
+
+    @if (isPersistentUserIdExist)
+    {
+        <label>Persistent User Id :</label> <b> @HttpContextAccessor?.HttpContext?.Request.Cookies["PersistentUserId"]  </b> <br />
+     
+
+    }
+    else
+    {
+        <h4>Persistent Cookies info is not available ! </h4>
+        <p>If you want to generate the Persistent cookies  please @Html.ActionLink("Click Here", "PersistentCookieView", "PersistentAndNonPersistent")  </p>
+    }
+
+    
+    @if (isNonPersistentUserIdExist)
+    {
+        <label>Non-Persistent User Id :</label> <b> @HttpContextAccessor?.HttpContext?.Request.Cookies["NonPersistentUserId"]  </b> <br />
+
+    }
+    else
+    {
+        <h4>Non-Persistent Cookies info is not available ! </h4>
+        <p>If you want to generate the Non-Persistent cookies  please @Html.ActionLink("Click Here", "NonPersistentCookieView", "PersistentAndNonPersistent")  </p>
+    }
+
+
+</div>
+
+
