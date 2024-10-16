@@ -8,6 +8,19 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<ICustomCookieService, CustomCookieService>();
 
+//Configuring Session service to our application
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(60);
+    options.IOTimeout = TimeSpan.FromSeconds(60);
+    options.Cookie.Name = ".StateManagementUsageInASPCoreMVC.Session";
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential= true;
+    options.Cookie.Path = "/";
+    options.Cookie.SecurePolicy= CookieSecurePolicy.Always;
+});
+
 // ConfigureApplicationCookie is an extension method given by ASP.NET Core to configure
 //the properites of the cookie used for application 
 //builder.Services.ConfigureApplicationCookie(options =>
@@ -46,6 +59,10 @@ app.UseStaticFiles();
 app.UseRouting();
 //app.UseCookiePolicy();
 app.UseAuthorization();
+
+
+//Configuring Session Middileware to our application 
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
