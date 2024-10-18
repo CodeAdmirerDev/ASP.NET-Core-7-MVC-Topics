@@ -25,7 +25,6 @@ namespace StateManagementUsageInASPCoreMVC.Controllers
             if (useridint != null)
             {
                 ViewBag.IntUserId = useridint.Value;
-
             }
 
             ViewBag.StringUserId = HttpContext.Session.GetString("StringUserId");
@@ -34,6 +33,14 @@ namespace StateManagementUsageInASPCoreMVC.Controllers
             return View();
         }
 
+        public IActionResult AccessSessionObjectInView()
+        {
 
-    }
+
+            return View();
+        }
+
+
+
+        }
 }
