@@ -1,7 +1,29 @@
 using Microsoft.AspNetCore.DataProtection;
+using Microsoft.EntityFrameworkCore;
 using StateManagementUsageInASPCoreMVC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Here we are add and configure the Entity framework core DBContext service
+builder.Services.AddDbContext<EFCoreDbContext>(options =>
+
+//Configure the DbContext to use SQL server with connection string from config
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"))
+
+);
+
+//Here we are add and configure the Distributed Sql Server Cache for Session storage
+builder.Services.AddDistributedSqlServerCache(options => {
+
+    //Set the conn string for connecting to the SQL server where session data will be stored 
+    options.ConnectionString = builder.Configuration.GetConnectionString("DefaultSQLConnection");
+    //Set the database schema where the session table will be located 
+    options.SchemaName = "dbo";
+    //Set the table name where the session data will be stored 
+    options.TableName = "MySessions";
+
+});
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

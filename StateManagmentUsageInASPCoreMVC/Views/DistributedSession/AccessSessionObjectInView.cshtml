@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+}
+
+<div class="container">
+
+    <label> <b> Int UserId : </b> @HttpContextAccessor?.HttpContext?.Session.GetInt32("IntUserId") </label> <br />
+    <label> <b> String UserId : </b> @HttpContextAccessor?.HttpContext?.Session.GetString("StringUserId") </label>
+
+</div>
