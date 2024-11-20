@@ -1,4 +1,5 @@
 using FiltersInASPNETCoreMVCApp.Data;
+using FiltersInASPNETCoreMVCApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,14 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+//Adding the custom filter globally in the middleware pipeline for all the controllers
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<CustomExceptionFilter>();
+    options.Filters.Add<RedirectToSpecificErrorViewFilter>();
+
+});
 
 var app = builder.Build();
 

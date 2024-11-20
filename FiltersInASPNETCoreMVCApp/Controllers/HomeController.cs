@@ -1,4 +1,5 @@
 using FiltersInASPNETCoreMVCApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,11 +14,17 @@ namespace FiltersInASPNETCoreMVCApp.Controllers
             _logger = logger;
         }
 
+        [TypeFilter(typeof(CustomExceptionFilter))]
         public IActionResult Index()
         {
+            string name = null;
+
+            string fname = name.Split(' ')[0];
+
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Privacy()
         {
             return View();
