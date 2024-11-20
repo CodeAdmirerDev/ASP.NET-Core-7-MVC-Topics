@@ -1,31 +1,31 @@
 Here is a table of common HTTP status codes and their meanings:
-
-| **Status Code** | **Category**        | **Meaning**                                                   |
-|------------------|---------------------|---------------------------------------------------------------|
+---------------------------------------------------------------------------------------------------------------------------
+| **Status Code**       | **Category**        | **Meaning**                                                               |
+|-----------------------|---------------------|---------------------------------------------------------------------------|
 | **1xx Informational** |
-| 100              | Continue           | The server has received the request headers and the client should proceed. |
-| 101              | Switching Protocols| The requester has asked the server to switch protocols.        |
-| **2xx Success**   |
-| 200              | OK                 | The request was successful.                                   |
-| 201              | Created            | The request was successful, and a new resource was created.   |
-| 202              | Accepted           | The request has been accepted but not yet processed.          |
-| 204              | No Content         | The server successfully processed the request, but no content is returned. |
-| **3xx Redirection** |
-| 301              | Moved Permanently  | The requested resource has been permanently moved to a new URL.|
-| 302              | Found              | The resource has been temporarily moved to a new URL.         |
-| 304              | Not Modified       | The resource has not been modified since the last request.    |
+| 100                   | Continue           | The server has received the request headers and the client should proceed. |
+| 101                   | Switching Protocols| The requester has asked the server to switch protocols.                    |
+| **2xx Success**       |
+| 200                   | OK                 | The request was successful.                                                |
+| 201                   | Created            | The request was successful, and a new resource was created.                |
+| 202                   | Accepted           | The request has been accepted but not yet processed.                       |
+| 204                   | No Content         | The server successfully processed the request, but no content is returned. |
+| **3xx Redirection**   |
+| 301                   | Moved Permanently  | The requested resource has been permanently moved to a new URL.             |
+| 302                   | Found              | The resource has been temporarily moved to a new URL.                       |
+| 304                   | Not Modified       | The resource has not been modified since the last request.                  |
 | **4xx Client Errors** |
-| 400              | Bad Request        | The server could not understand the request.                  |
-| 401              | Unauthorized       | Authentication is required to access the resource.            |
-| 403              | Forbidden          | The server refuses to fulfill the request.                    |
-| 404              | Not Found          | The requested resource could not be found.                    |
-| 405              | Method Not Allowed | The HTTP method is not allowed for the requested resource.    |
-| 409              | Conflict           | The request conflicts with the current state of the resource. |
-| 429              | Too Many Requests  | The client has sent too many requests in a given time frame.  |
+| 400                   | Bad Request        | The server could not understand the request.                                |
+| 401                   | Unauthorized       | Authentication is required to access the resource.                          |
+| 403                   | Forbidden          | The server refuses to fulfill the request.                                  |
+| 404                   | Not Found          | The requested resource could not be found.                                  |
+| 405                   | Method Not Allowed | The HTTP method is not allowed for the requested resource.                  |
+| 409                   | Conflict           | The request conflicts with the current state of the resource.               |
+| 429                   | Too Many Requests  | The client has sent too many requests in a given time frame.                |
 | **5xx Server Errors** |
-| 500              | Internal Server Error | A generic error occurred on the server.                    |
-| 501              | Not Implemented    | The server does not recognize the request method.             |
-| 502              | Bad Gateway        | The server received an invalid response from an upstream server. |
-| 503              | Service Unavailable| The server is not ready to handle the request.               |
-| 504              | Gateway Timeout    | The server did not receive a timely response from an upstream server. | 
-
+| 500                   |InternalServer Error| A generic error occurred on the server.                                     |
+| 501                   | Not Implemented    | The server does not recognize the request method.                           |
+| 502                   | Bad Gateway        | The server received an invalid response from an upstream server.            |
+| 503                   | Service Unavailable| The server is not ready to handle the request.                              |
+| 504                   | Gateway Timeout    | The server did not receive a timely response from an upstream server.       | 
+----------------------------------------------------------------------------------------------------------------------------
