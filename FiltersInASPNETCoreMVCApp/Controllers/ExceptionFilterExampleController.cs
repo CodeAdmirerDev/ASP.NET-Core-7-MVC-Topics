@@ -24,5 +24,7 @@ namespace FiltersInASPNETCoreMVCApp.Controllers
 
             return View();
         }
+
+
     }
 }

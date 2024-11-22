@@ -32,7 +32,10 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Home/Error"); // Handles exceptions like invalid views
+    //app.UseStatusCodePages();//It will dispay the 404 friendly error message
+    app.UseStatusCodePagesWithRedirects("/Error/{0}"); // Handles HTTP status codes like 404
+
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
