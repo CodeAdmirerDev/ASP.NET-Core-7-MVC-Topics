@@ -19,7 +19,7 @@ namespace FiltersInASPNETCoreMVCApp.Controllers
         {
             string name = null;
 
-            string fname = name.Split(' ')[0];
+            //string fname = name.Split(' ')[0];
 
             return View();
         }
