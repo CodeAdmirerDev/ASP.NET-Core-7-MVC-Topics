@@ -4,3 +4,13 @@ Executing custom result filter attribute before result execution.
 
 Executing custom result filter attribute after result execution.
 
+CustomResultFilterApproachOne: Executing custom result filter attribute before result execution.
+
+ CustomResultFilterApproachOne : Here is the few more info : Method name: 'FiltersInASPNETCoreMVCApp.Controllers.ResultFilterExampleController.ResultFilterApproachOne (FiltersInASPNETCoreMVCApp)' executed, resulting in 'ObjectResult'. 
+
+CustomResultFilterApproachOne: Executing custom result filter attribute after result execution.
+
+CustomResultFilterApproachTwo: Executing custom result filter attribute before result execution.
+
+CustomResultFilterApproachTwo: Executing custom result filter attribute after result execution.
+

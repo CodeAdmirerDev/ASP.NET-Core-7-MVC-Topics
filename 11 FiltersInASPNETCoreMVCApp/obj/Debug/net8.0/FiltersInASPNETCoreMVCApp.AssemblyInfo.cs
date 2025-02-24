@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FiltersInASPNETCoreMVCApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2100cb85d57df26a128995256dc9074344bed130")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd71d5a28d6c32c9ea0982b10ae74de05b8d259c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FiltersInASPNETCoreMVCApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FiltersInASPNETCoreMVCApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

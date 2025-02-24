@@ -1,6 +1,7 @@
 using FiltersInASPNETCoreMVCApp.Data;
 using FiltersInASPNETCoreMVCApp.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,15 +16,27 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<CustomResultFilterApproachTwo>();
+
 //Adding the custom filter globally in the middleware pipeline for all the controllers
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<CustomExceptionFilter>();
     options.Filters.Add<RedirectToSpecificErrorViewFilter>();
+    //options.Filters.Add<CustomResultFilterApproachThree>(); // Register globally
 
 });
 
+// Add response compression services
+builder.Services.AddResponseCompression(options =>
+{
+    options.EnableForHttps = true; // Optionally enable for HTTPS
+    options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/json" });
+});
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -42,6 +55,9 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Enable response compression globally
+app.UseResponseCompression();
 
 app.UseRouting();
 
