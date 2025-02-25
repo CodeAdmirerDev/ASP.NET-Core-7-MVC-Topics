@@ -34,6 +34,9 @@ builder.Services.AddResponseCompression(options =>
     options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/json" });
 });
 
+// Add response caching services
+builder.Services.AddResponseCaching();
+
 var app = builder.Build();
 
 
@@ -61,6 +64,8 @@ app.UseResponseCompression();
 
 app.UseRouting();
 
+// Adding the response caching middleware
+app.UseResponseCaching();
 app.UseAuthorization();
 
 app.MapControllerRoute(
