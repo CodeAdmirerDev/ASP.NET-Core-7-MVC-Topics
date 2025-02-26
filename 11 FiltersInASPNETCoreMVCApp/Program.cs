@@ -1,5 +1,6 @@
 using FiltersInASPNETCoreMVCApp.Data;
 using FiltersInASPNETCoreMVCApp.Models;
+using FiltersInASPNETCoreMVCApp.Models.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
@@ -27,12 +28,21 @@ builder.Services.AddControllers(options =>
 
 });
 
+//It will apply the Autorization filter globally 
+
+//builder.Services.AddControllersWithViews(options =>
+//{
+//    options.Filters.Add<CustomAuthorizationFilter>();
+//});
+
 // Add response compression services
 builder.Services.AddResponseCompression(options =>
 {
     options.EnableForHttps = true; // Optionally enable for HTTPS
     options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/json" });
 });
+
+builder.Services.AddSingleton<ILoggerService, LoggerService>();
 
 // Add response caching services
 builder.Services.AddResponseCaching();

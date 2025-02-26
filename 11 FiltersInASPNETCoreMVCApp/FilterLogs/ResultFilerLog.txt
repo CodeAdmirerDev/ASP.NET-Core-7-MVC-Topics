@@ -14,3 +14,5 @@ CustomResultFilterApproachTwo: Executing custom result filter attribute before r
 
 CustomResultFilterApproachTwo: Executing custom result filter attribute after result execution.
 
+ Statrting Action Method TestActionFilterProcess in Controller ActionFilterExample with parameters {} started at 27-02-2025 00:58:14
+ Ended Action Method TestActionFilterProcess in Controller ActionFilterExample in 16374 ms
