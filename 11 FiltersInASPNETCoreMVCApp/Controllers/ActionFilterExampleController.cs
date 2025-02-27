@@ -15,5 +15,26 @@ namespace FiltersInASPNETCoreMVCApp.Controllers
         {
             return "Action filter executed please check the logs";
         }
+
+        [ServiceFilter(typeof(CustomAsyncCacheActionFilter))]
+        public IActionResult TestAsyncActionFilter()
+        {
+            ViewData["CurrentDateTime"] = DateTime.Now;
+            return View();
+        }
+
+
+        [DataTransformationActionFilter]
+        public IActionResult ShowCustomModelDetails()
+        {
+            var model = new CustomModel
+            {
+                Name = "CodeAdmirer",
+                Adress = "India"
+            };
+            return View(model);
+        }
+
+
     }
 }

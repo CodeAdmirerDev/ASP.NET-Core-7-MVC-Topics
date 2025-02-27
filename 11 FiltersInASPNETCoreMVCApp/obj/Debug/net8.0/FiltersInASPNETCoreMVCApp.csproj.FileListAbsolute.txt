@@ -302,3 +302,4 @@ F:\Suri practies\ASP.NET-Core-7-MVC-Topics\11 FiltersInASPNETCoreMVCApp\obj\Debu
 F:\Suri practies\ASP.NET-Core-7-MVC-Topics\11 FiltersInASPNETCoreMVCApp\obj\Debug\net8.0\FiltersInASPNETCoreMVCApp.pdb
 F:\Suri practies\ASP.NET-Core-7-MVC-Topics\11 FiltersInASPNETCoreMVCApp\obj\Debug\net8.0\FiltersInASPNETCoreMVCApp.genruntimeconfig.cache
 F:\Suri practies\ASP.NET-Core-7-MVC-Topics\11 FiltersInASPNETCoreMVCApp\obj\Debug\net8.0\ref\FiltersInASPNETCoreMVCApp.dll
+F:\Suri practies\ASP.NET-Core-7-MVC-Topics\11 FiltersInASPNETCoreMVCApp\bin\Debug\net8.0\Newtonsoft.Json.dll

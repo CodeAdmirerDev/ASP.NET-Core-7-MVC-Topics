@@ -1,0 +1,24 @@
+﻿@model  FiltersInASPNETCoreMVCApp.Models.CustomModel
+
+@{
+    ViewData["Title"] = "ShowCustomModelDetails";
+}
+
+<h5>Show Custom Model Details</h5>
+
+<div class="container mt-4">
+    <h6 class="mb-6"> Details</h6>
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">
+                Name:
+            </h3>
+            <p class="card-text"> @Model.Name</p>
+            <h3>
+                Address:
+            </h3>
+            <p class="card-text"> @Model.Adress</p>
+            </div>
+    </div>
+</div>

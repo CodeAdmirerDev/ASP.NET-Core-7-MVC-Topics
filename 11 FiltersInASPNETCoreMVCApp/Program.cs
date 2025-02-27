@@ -18,6 +18,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<CustomResultFilterApproachTwo>();
+builder.Services.AddScoped<CustomAsyncCacheActionFilter>();
 
 //Adding the custom filter globally in the middleware pipeline for all the controllers
 builder.Services.AddControllers(options =>
@@ -54,6 +55,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseMigrationsEndPoint();
 }
 else
