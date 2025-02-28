@@ -4,13 +4,13 @@
     {
        
         public string? Name { get; set; }
-        public string? Adress { get; set; }
+        public string? Address { get; set; }
 
         public void DataTransform()
         {
             // Implement your custom logic here
             Name += " - Action Filter Executed";
-            Adress += " - Action Filter Executed";
+            Address += " - Action Filter Executed";
 
         }
     }

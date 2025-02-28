@@ -30,11 +30,35 @@ namespace FiltersInASPNETCoreMVCApp.Controllers
             var model = new CustomModel
             {
                 Name = "CodeAdmirer",
-                Adress = "India"
+                Address = "India"
             };
             return View(model);
         }
 
+        [HttpGet]
+        public IActionResult CreateUserAccount()
+        {
+            return View();
+        }
+
+        [TypeFilter(typeof(CustomValidationActionFilter))]
+        [HttpPost]
+        public IActionResult CreateUserAccount(CustomModel userAccountModel)
+        {
+            if (ModelState.IsValid)
+            {
+                // Save the user account to the database
+                TempData["Message"] = $"User account :{userAccountModel.Name} created successfully!";
+                return RedirectToAction("Index");
+            }
+            return View(userAccountModel);
+        }
+
+        [TypeFilter(typeof(CustomExceptionFilter))]
+        public IActionResult ThrowException()
+        {
+            throw new Exception("This is a test exception");
+        }
 
     }
 }
